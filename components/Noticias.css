@@ -1,0 +1,101 @@
+/* Contenedor general de noticias */
+
+.main-noticias {
+    width: 93%;
+    margin: 10px auto;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.20);
+    background-color: white;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-radius: 4px;
+}
+
+.contenedor-noticias {
+    width: 95%;
+    margin: 0 auto 20px;
+}
+
+/* Título con ícono */
+.titulo-hipica {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.titulo-left {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.titulo-noticias {
+    padding: 20px 10px 10px;
+}
+
+.punto-color-titulo {
+    color: #248589; /* Ajustá según el color que uses */
+}
+
+/* Card de noticia */
+.card {
+    width: 85%;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+                0 10px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15),
+                0 14px 28px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen superior */
+.card-img-top {
+    height: 270px;
+    object-fit: cover;
+}
+
+/* Cuerpo de la tarjeta */
+.card-body-noti {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Título de la noticia */
+.card-titulo-noti {
+    font-family: var(--titulo); /* Asegurate de tener esta variable, si no podés usar: 'Segoe UI', sans-serif */
+    font-size: 22px;
+}
+
+/* Texto de la noticia */
+.card-parrafo-noti {
+    color: grey;
+}
+
+/* Pie de la tarjeta */
+.card-footer {
+    padding: 8px;
+}
+
+/* Ícono de YouTube */
+.i-youtu {
+    color: red;
+    font-size: 20px;
+    transition: 0.2s ease;
+    opacity: 1;
+}
+
+.i-youtu:hover {
+    opacity: 0.4;
+}
+
+/* Espaciado entre columnas en modo responsive */
+.row-cols-1 {
+    row-gap: 20px;
+}

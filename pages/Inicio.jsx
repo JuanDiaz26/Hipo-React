@@ -1,12 +1,18 @@
 import React from 'react';
 import HeaderInicio from '../components/HeaderInicio.jsx';
-// import MainInicio from '../components/MainInicio';
-// import FooterInicio from '../components/FooterInicio';
+import MainContainer from '../components/MainContainer.jsx';
+import Noticias from "../components/Noticias";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
 
 const Inicio = () => {
   return (
     <>
       <HeaderInicio />
+      <MainContainer />
+      <Noticias />
     </>
   );
 };

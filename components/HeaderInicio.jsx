@@ -1,9 +1,7 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./HeaderInicio.css";
 import { Link } from 'react-router-dom';
+
 
 <div className="contenedorBotonesCentro">
   <Link to="/apuestas" className="button" id="buttonApp" data-tooltip="Size: 20Mb">
