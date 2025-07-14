@@ -123,21 +123,13 @@
     padding: 1px;
 }
 
-/* HIPICA */
-.titulo-hipica {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 30px;
-    font-size: 23px;
-}
-
 .contenedor-botones-inicio { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-bottom: 20px;
 }
 
 .cardHipica {
@@ -181,7 +173,7 @@
 /* CALENDARIO */
 .calendar {
     width: 90%;
-    margin: 10px auto;  
+    margin: 0px auto;  
     box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.35);
 }
 
@@ -320,18 +312,28 @@
 }
 
 
-.titulo-center {
-  text-align: center;
+/* Título de sección reutilizable */
+.titulo-seccion {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 10px 10px;
+  text-align: left;
 }
 
+/* Color del puntito SVG */
 .punto-color-titulo {
-  color: #248589; /* O el color que usaste para el punto */
+  color: #248589; /* Color institucional */
 }
 
-.titulo-calendar {
-    margin-bottom: 0;
+/* Ajustes para títulos en columna más angosta (como el aside derecho) */
+.titulo-derecha {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
 }

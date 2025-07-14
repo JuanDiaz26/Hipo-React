@@ -31,12 +31,11 @@ const noticias = [
 const Noticias = () => {
   return (
     <section className="main-noticias">
-      <h2 className="titulo-hipica titulo-left titulo-noticias">
+      <h2 className="titulo-seccion">
 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
   className="bi bi-record-fill punto-color-titulo" viewBox="0 0 16 16">
   <path fillRule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10z"/>
-</svg>
-        &nbsp; Noticias
+</svg>Noticias
       </h2>
 
       <div className="contenedor-noticias">

@@ -1,0 +1,149 @@
+.sorteo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.titulo-sorteo {
+  color: #17479d;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.info-bloque {
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.fecha-reunion {
+  font-weight: bold;
+  color: #17479d;
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+}
+
+.descripcion {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.sorteo-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  max-height: 80vh;
+  flex-wrap: wrap;
+}
+
+.sorteo-tabla {
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #17479d;
+  min-width: 260px;
+  max-width: 360px;
+}
+
+.sorteo-tabla th,
+.sorteo-tabla td {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #17479d;
+  width: 100px;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.btn-sorteo,
+.btn-descargar {
+  background-color: #f47c1e;
+  color: white;
+  font-size: 1rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 150px;
+  text-align: center;
+}
+
+.btn-sorteo:hover,
+.btn-descargar:hover {
+  background-color: #d96600;
+}
+
+.btn-sorteo:disabled,
+.btn-descargar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.aparece {
+  animation: fadeInCell 0.3s ease-in;
+}
+
+@keyframes fadeInCell {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.leyenda-legal {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .titulo-sorteo {
+    font-size: 1.5rem;
+  }
+
+  .sorteo-grid {
+    flex-direction: column;
+    gap: 1rem;
+    max-height: none;
+  }
+
+  .btn-sorteo,
+  .btn-descargar {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    min-width: 100%;
+  }
+
+  .sorteo-tabla {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .sorteo-tabla th,
+  .sorteo-tabla td {
+    font-size: 0.9rem;
+    padding: 0.3rem;
+  }
+}

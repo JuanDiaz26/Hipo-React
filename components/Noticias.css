@@ -15,29 +15,21 @@
     margin: 0 auto 20px;
 }
 
-/* Título con ícono */
-.titulo-hipica {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    font-size: 23px;
+.titulo-seccion {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 10px 10px;
+  text-align: left;
 }
 
-.titulo-left {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-left: 15px;
-}
-
-.titulo-noticias {
-    padding: 20px 10px 10px;
-}
-
+/* Color del ícono tipo "punto" (SVG) */
 .punto-color-titulo {
-    color: #248589; /* Ajustá según el color que uses */
+  color: #248589;
 }
 
 /* Card de noticia */
