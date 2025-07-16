@@ -9,23 +9,32 @@ const months = [
 const daysOfWeek = ["D", "L", "M", "X", "J", "V", "S"];
 
 const linksData = [
-  { year: 2024, month: 2, day: 4, url: "/estadisticas" },
-  { year: 2024, month: 2, day: 18, url: "/resultados" },
-  { year: 2024, month: 8, day: 25, url: "#" },
+  { year: 2025, month: 7, day: 13, url: "/carreras/13-julio" },
+  { year: 2025, month: 7, day: 27, url: "/carreras/27-julio" },
+  { year: 2025, month: 8, day: 10, url: "/carreras/10-agosto" },
+  { year: 2025, month: 8, day: 24, url: "/carreras/24-agosto" },
 ];
 
+
 const Calendar = () => {
-  const [currentMonth, setCurrentMonth] = useState(new Date().getMonth());
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+  const today = new Date();
+
+  const [currentYear] = useState(2025); // Siempre 2025
+
+  const [currentMonth, setCurrentMonth] = useState(
+    today.getFullYear() === 2025 ? today.getMonth() : 0
+  );
 
   const prevMonth = () => {
-    setCurrentMonth(prev => (prev === 0 ? 11 : prev - 1));
-    setCurrentYear(prev => (currentMonth === 0 ? prev - 1 : prev));
+    if (currentMonth > 0) {
+      setCurrentMonth(prev => prev - 1);
+    }
   };
 
   const nextMonth = () => {
-    setCurrentMonth(prev => (prev === 11 ? 0 : prev + 1));
-    setCurrentYear(prev => (currentMonth === 11 ? prev + 1 : prev));
+    if (currentMonth < 11) {
+      setCurrentMonth(prev => prev + 1);
+    }
   };
 
   const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
