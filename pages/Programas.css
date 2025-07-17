@@ -1,0 +1,90 @@
+.container-titulo-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titulo-pages {
+  margin: 0;
+  padding: 20px 0 0;
+}
+
+.separador-pages {
+  width: 60%;
+  margin: 15px auto;
+  background-color: rgb(0, 0, 0, 0.2);
+  padding: 1px;
+}
+
+/********* CSS ESPECÍFICO PARA PROGRAMAS *********/
+
+.container-programas {
+  text-align: center;
+  width: 93%;
+  margin: auto;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .container-programas {
+    width: 60%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 950px) {
+  .container-programas {
+    width: 40%;
+  }
+}
+
+.link-programa {
+  color: rgb(83, 81, 81); /* Color del enlace */
+  text-decoration: none;
+}
+
+.link-programa:hover {
+  text-decoration: underline; /* Subrayar enlace al pasar el ratón */
+}
+
+.logo-pdf {
+  color: red;
+  font-size: 25px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.logo-pdf:hover {
+  opacity: 0.3;
+}
+
+.titulos-tabla-programas {
+  color: white;
+}
+
+/* Tabla general */
+table {
+  width: 100%;
+  border: none;
+  font-size: 14px;
+  font-family: var(--footer);
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  border: none;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #e0311ee0;
+  color: white;
+}
+
+tbody td {
+  border: 1px solid rgba(0, 0, 0, 0.192);
+  color: #f16536;
+  font-weight: bold;
+}

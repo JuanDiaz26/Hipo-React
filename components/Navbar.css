@@ -1,0 +1,42 @@
+.navbar-pages {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: rgb(251, 251, 251);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 251, 251, 1) 1%,
+    rgba(36, 133, 137, 0.8) 40%,
+    rgba(241, 101, 54, 0.8) 55%
+  );
+}
+
+.navbar-pages .navbar-nav .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-pages .navbar-nav .nav-link:hover {
+  color: #dddddd;
+}
+
+.navbar-pages .navbar-brand img {
+  height: 50px;
+}
+
+.navbar-pages .offcanvas {
+  background-color: rgba(36, 133, 137, 0.95);
+}
+
+.navbar-pages .dropdown-menu {
+  background-color: #242628;
+}
+
+.navbar-pages .dropdown-item {
+  color: white;
+}
+
+.navbar-pages .dropdown-item:hover {
+  background-color: #444;
+}
