@@ -1,3 +1,4 @@
+/* Estructura general compartida */
 .container-titulo-pages {
   display: flex;
   justify-content: center;
@@ -12,11 +13,9 @@
 .separador-pages {
   width: 60%;
   margin: 15px auto;
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 1px;
 }
-
-/********* CSS ESPECÍFICO PARA PROGRAMAS *********/
 
 .container-programas {
   text-align: center;
@@ -36,30 +35,6 @@
   .container-programas {
     width: 40%;
   }
-}
-
-.link-programa {
-  color: rgb(83, 81, 81); /* Color del enlace */
-  text-decoration: none;
-}
-
-.link-programa:hover {
-  text-decoration: underline; /* Subrayar enlace al pasar el ratón */
-}
-
-.logo-pdf {
-  color: red;
-  font-size: 25px;
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-
-.logo-pdf:hover {
-  opacity: 0.3;
-}
-
-.titulos-tabla-programas {
-  color: white;
 }
 
 /* Tabla general */
@@ -87,4 +62,21 @@ tbody td {
   border: 1px solid rgba(0, 0, 0, 0.192);
   color: #f16536;
   font-weight: bold;
+}
+
+/* PDF icono */
+.logo-pdf {
+  color: red;
+  font-size: 25px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.logo-pdf:hover {
+  opacity: 0.3;
+}
+
+/* Título en la tabla */
+.titulos-tabla-programas {
+  color: white;
 }

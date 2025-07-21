@@ -70,13 +70,13 @@ const Navbar = ({ variant }) => {
                   <ul className="dropdown-menu dropdown-menu-dark">
                     <li><a className="dropdown-item" href="/programas">Programas</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/resultados.html">Resultados</a></li>
+                    <li><a className="dropdown-item" href="/resultados">Resultados</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/cartas.html">Cartas de Llamadas</a></li>
+                    <li><a className="dropdown-item" href="/cartas">Cartas de Llamadas</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/inscripcion.html">Inscripción</a></li>
+                    <li><a className="dropdown-item" href="/inscripcion">Inscripción</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/estadisticas.html">Estadísticas</a></li>
+                    <li><a className="dropdown-item" href="/estadisticas">Estadísticas</a></li>
                     <li><hr className="dropdown-divider" /></li>
                     <li><a className="dropdown-item" href="/pages/escala.html">Escala de premios</a></li>
                     <li><hr className="dropdown-divider" /></li>
