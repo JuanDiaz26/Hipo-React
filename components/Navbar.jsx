@@ -12,14 +12,16 @@ const Navbar = ({ variant }) => {
         className={`navbar navbar-expand-md fixed-top ${isInicio ? "navbar-dark navbar-inicio-estilo" : "navbar-dark navbar-pages-estilo"}`}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            <img
-              className="logo-hipo-inicio logo-none"
-              src={isInicio ? "../src/assets/logohipoblanco.png" : "../src/assets/logohipocolor.png"}
-              alt="Logo HipodromodeTucuman"
-              loading="lazy"
-            />
-          </a>
+          {!isInicio && (
+            <a className="navbar-brand" href="/">
+              <img
+                className="logo-hipo-inicio"
+                src="../src/assets/logohipocolor.png"
+                alt="Logo HipodromodeTucuman"
+                loading="lazy"
+              />
+            </a>
+          )}
           <button
             className="navbar-toggler"
             type="button"
@@ -78,9 +80,9 @@ const Navbar = ({ variant }) => {
                     <li><hr className="dropdown-divider" /></li>
                     <li><a className="dropdown-item" href="/estadisticas">Estadísticas</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/escala.html">Escala de premios</a></li>
+                    <li><a className="dropdown-item" href="/escalas">Escala de premios</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/videosReunion.html">Últimas carreras</a></li>
+                    <li><a className="dropdown-item" href="/UltimasCarreras">Últimas carreras</a></li>
                   </ul>
                 </li>
 
@@ -95,16 +97,16 @@ const Navbar = ({ variant }) => {
                     <i className="bi bi-cash-coin"></i> Apuestas
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
-                    <li><a className="dropdown-item" href="/pages/agencias.html">Agencias</a></li>
+                    <li><a className="dropdown-item" href="/Agencias">Agencias</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/como-apostar.html">Cómo apostar?</a></li>
+                    <li><a className="dropdown-item" href="/ComoApostar">Cómo apostar?</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/tipos-de-apuestas.html">Tipos de apuestas</a></li>
+                    <li><a className="dropdown-item" href="/TiposApuestas">Tipos de apuestas</a></li>
                   </ul>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link not-bold" href="/pages/contacto.html">
+                  <a className="nav-link not-bold" href="/contacto">
                     <i className="bi bi-telephone-fill"></i> Contacto
                   </a>
                 </li>
@@ -120,13 +122,13 @@ const Navbar = ({ variant }) => {
                     <i className="bi bi-building-fill"></i> Institucional
                   </a>
                   <ul className="dropdown-menu dropdown-menu-dark">
-                    <li><a className="dropdown-item" href="/pages/historia.html">Historia</a></li>
+                    <li><a className="dropdown-item" href="/historia">Historia</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/carrerasDestacadas.html">Carreras Destacadas</a></li>
+                    <li><a className="dropdown-item" href="/carrerasDestacadas">Carreras Destacadas</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/museo.html">Museo</a></li>
+                    <li><a className="dropdown-item" href="/museo">Museo</a></li>
                     <li><hr className="dropdown-divider" /></li>
-                    <li><a className="dropdown-item" href="/pages/escuela.html">Escuela de Jockeys</a></li>
+                    <li><a className="dropdown-item" href="/escuela">Escuela de Jockeys</a></li>
                   </ul>
                 </li>
               </ul>

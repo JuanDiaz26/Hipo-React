@@ -1,4 +1,17 @@
-/* Estructura general compartida */
+/* ========== ESTILOS GENERALES Y ESTRUCTURA DE PÁGINAS CON TABLAS ========== */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.header-pages {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background: linear-gradient(90deg, rgba(251,251,251,1) 1%, rgba(36,133,137,0.8) 40%, rgba(241,101,54,0.8) 55%);
+}
+
 .container-titulo-pages {
   display: flex;
   justify-content: center;
@@ -11,72 +24,681 @@
 }
 
 .separador-pages {
-  width: 60%;
+  width: 30%;
   margin: 15px auto;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 1px;
 }
 
-.container-programas {
+.container-estadisticas, .container-programas {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.titulo-estadisticas {
+  font-size: 14px;
+  font-family: var(--parrafos);
   text-align: center;
-  width: 93%;
-  margin: auto;
-  padding: 10px;
+  padding: 5px 2px;
+  background-color: #248689f3;
+  color: white;
+  font-weight: bold;
+}
+
+.botonesNav {
+  width: 60%;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-est {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (min-width: 648px) {
+  .container-estadisticas, .container-programas {
+    width: 70%;
+    margin: auto;
+  }
+
+  .botonesNav {
+    width: 80%;
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 @media (min-width: 768px) {
-  .container-programas {
-    width: 60%;
-    padding: 20px;
+  .th-ofic {
+    padding: 0 10px;
+  }
+
+  .container-escalas {
+    width: 70%;
+    gap: 30px;
   }
 }
 
-@media (min-width: 950px) {
-  .container-programas {
-    width: 40%;
+@media (min-width: 960px) {
+  .container-estadisticas, .container-programas {
+    width: 50%;
+    margin: auto;
   }
 }
 
-/* Tabla general */
+/* ========== TABLAS ========== */
 table {
   width: 100%;
   border: none;
   font-size: 14px;
   font-family: var(--footer);
   border-collapse: collapse;
-  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.20);
+  margin-bottom: 20px;
 }
 
 th, td {
   border: none;
   text-align: center;
-  padding: 8px;
+  padding: 12px;
 }
 
 th {
   background-color: #e0311ee0;
   color: white;
-}
-
-tbody td {
-  border: 1px solid rgba(0, 0, 0, 0.192);
-  color: #f16536;
   font-weight: bold;
+  font-size: 16px;
 }
 
-/* PDF icono */
+.container-programas table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+.filas-estadisticas {
+  border-bottom: 1px solid #a1a1a1;
+}
+
+.tabla-text-negro {
+  font-weight: bold;
+  padding: 5px;
+  color: #000;
+}
+
+.titulos-tabla {
+  text-align: center;
+  color: white;
+}
+
+.th-number {
+  width: 30px;
+}
+
+.th-nombre {
+  width: 250px;
+}
+
+.th-ofic {
+  max-width: 50px;
+}
+
+/* ========== ÍCONO PDF ========== */
 .logo-pdf {
+  font-size: 24px;
   color: red;
-  font-size: 25px;
-  opacity: 1;
-  transition: all 0.3s ease;
 }
 
 .logo-pdf:hover {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 
-/* Título en la tabla */
-.titulos-tabla-programas {
+/* ========== BOTONES PERSONALIZADOS (Estadísticas, WhatsApp, etc.) ========== */
+.button {
+  position: relative;
+  overflow: hidden;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonWpApostar {
+  background-color: #128C7E !important;
+}
+
+.button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+}
+
+.button-content a {
+  text-decoration: none;
   color: white;
 }
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(82.3deg, rgba(150, 93, 233, 1) 10.8%, rgba(99, 88, 238, 1) 94.3%);
+  transition: all 0.475s;
+}
+
+/* ========== ESCALAS ========== */
+#tablaEscalaPremios th {
+  text-align: center;
+}
+
+.titulo-categoria {
+  font-size: 14px;
+  font-family: var(--parrafos);
+  text-align: center;
+  padding: 5px 2px;
+  background-color: #248689f3;
+  color: white;
+}
+
+.container-escalas {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0 30px;
+}
+
+.container-tabla-escalas {
+  width: 220px;
+}
+
+/******* FIN ESCALAS *******/
+
+/* ========== VIDEOS DE CARRERAS - ÚLTIMAS CARRERAS ========== */
+.card-body {
+  text-align: center;
+  padding: 7px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+  color: #e0331e;
+  border-bottom: 1px solid #128C7E;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 0.25rem;
+}
+
+.medalla-oro {
+  color: #FFD700;
+}
+
+/******* FIN VIDEOS *******/
+
+/* ========== AGENCIAS ========== */
+
+.container-mapa {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.descripcion-mapa {
+  font-family: var(--parrafos);
+  font-size: 15px;
+  text-align: center;
+  color: #e0331e;
+}
+
+.iconos-mapa {
+  padding: 15px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.img-caballo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-caballo strong {
+  margin-left: 5px;
+  font-family: var(--parrafos);
+  color: rgb(139, 134, 134);
+}
+
+.img-caballo .img-ubicacion {
+  background-color: rgba(207, 203, 203, 0.351);
+  padding: 6px;
+  border-radius: 50%;
+  width: 37px;
+}
+
+.img-caballo .img-congreso {
+  background-color: rgb(194, 24, 91);
+  padding: 6px;
+  border-radius: 50%;
+  width: 35px;
+}
+
+.img-caballo .img-mitre {
+  background-color: rgb(2, 136, 209);
+  padding: 6px;
+  border-radius: 50%;
+  width: 35px;
+}
+
+@media (min-width: 768px) {
+  .container-mapa {
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .iconos-mapa {
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .mapa-iframe {
+    width: 50%;
+  }
+}
+
+/******* FIN AGENCIAS *******/
+
+
+/* ========== CÓMO APOSTAR ========== */
+
+.container-como-apostar {
+  padding: 20px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.strongTiposAp {
+  color: #e0331e;
+}
+
+@media (min-width: 568px) {
+  .container-como-apostar {
+    width: 60%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-como-apostar {
+    width: 90%;
+  }
+}
+
+.img-como-apostar {
+  width: auto;
+  height: 150px;
+}
+
+.card-body-como-apostar {
+  text-align: center;
+}
+
+.capa-apostar {
+  background-color: rgba(0, 0, 0, 0.926);
+  width: 370px;
+  height: 150px;
+}
+
+.container-button-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.pasos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container-paso-a-paso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.paso-a-paso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  gap: 5px;
+}
+
+.img-pasos {
+  width: 50%;
+  box-shadow: 10px 10px 11px -5px rgba(177,167,167,0.79);
+  -webkit-box-shadow: 10px 10px 11px -5px rgba(177,167,167,0.79);
+  -moz-box-shadow: 10px 10px 11px -5px rgba(177,167,167,0.79);
+}
+
+.img-paso3grande {
+  width: 70%;
+  box-shadow: 10px -5px 11px -5px rgba(177,167,167,0.79), 10px 10px 11px -5px rgba(177,167,167,0.79);
+  -webkit-box-shadow: 10px -5px 11px -5px rgba(177,167,167,0.79), 10px 10px 11px -5px rgba(177,167,167,0.79);
+  -moz-box-shadow: 10px -5px 11px -5px rgba(177,167,167,0.79), 10px 10px 11px -5px rgba(177,167,167,0.79);
+}
+
+.titulos-descargar-call {
+  color: #e0331e;
+  font-size: 18px;
+  font-family: var(--parrafos);
+}
+
+.titulos-pasos {
+  color: rgb(139, 134, 134);
+  font-family: var(--parrafos);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pasos-numeros {
+  font-size: 40px;
+  color: #e0331e;
+}
+
+@media (min-width: 648px) {
+  .container-paso-a-paso {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .img-pasos {
+    width: 70%;
+  }
+
+  .titulos-pasos {
+    font-size: 17px;
+  }
+
+  .paso-a-paso {
+    width: 40%;
+  }
+
+  .img-paso3grande {
+    width: 70%;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 924px) {
+  .img-pasos {
+    width: 50%;
+  }
+
+  .img-paso3grande {
+    width: 70%;
+  }
+}
+
+/******* FIN CÓMO APOSTAR *******/
+
+
+/*******COMIENZO PAGINA CONTACTO*******/
+
+.container-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 20px;
+    width: 90%;
+    margin: auto;
+    gap: 30px;
+}
+
+.form-contacto-container {
+  max-width: 400px;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-contacto-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-contacto-header p {
+  color: #248689f3;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.form-group label i {
+  margin-right: 8px;
+  font-size: 18px;
+  color: #248689f3;
+}
+.form-contacto-input,
+.form-contacto-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.form-contacto-input:focus,
+.form-contacto-textarea:focus {
+    border: 3px solid #66afe9;
+    outline: none !important;
+}
+
+
+.form-contacto-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff6f61;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-contacto-button:hover {
+  background-color: #e65a50;
+}
+
+.container-telefonos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 0 0 20px;
+}
+
+.container-titulos {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: transform 0.2s;
+}
+
+.container-titulos:hover {
+    transform: translateY(-5px);
+}
+
+.container-titulos i {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #ff6f61;
+}
+
+.titulo-sectores {
+    font-weight: bold;
+    color: #343a40;
+}
+  
+.descripcion-sectores a {
+    color: #248689f3;
+    text-decoration: none;
+    font-weight: 500;
+}
+  
+.descripcion-sectores a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .container-telefonos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-titulos {
+        width: 250px;
+    }
+}
+
+/*******FIN PAGINA CONTACTO*******/
+
+/******* PAGINA HISTORIA *******/
+
+.contenedorHistoria {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.historia figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.historia img {
+    width: 75%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    margin: 10px auto 0;
+}
+
+.contenedorHistoria p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: var(--parrafos);
+}
+
+figcaption {
+    font-family: 'Georgia', serif;
+    font-size: 12px;
+    font-style: italic;
+    color: #555;
+    margin: 5px auto;
+    text-align: center;
+    width: 90%;
+}
+
+@media (min-width: 768px) {
+    .contenedorHistoria {
+        width: 80%;
+        margin: auto;
+        gap: 30px;
+    }
+
+    .historia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .historia figure {
+        width: 50%;
+    }
+
+    .historia img {
+        width: 80%;
+    }
+
+    .historia p {
+        width: 40%;
+    }
+
+    .separador-pages {
+        width: 300px;  
+        margin: 25px auto;
+        padding: 1.25px; 
+    }
+}
+
+/******* FIN PAGINA HISTORIA *******/

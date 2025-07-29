@@ -71,7 +71,7 @@ const VideosRecientes = () => {
         </div>
 
         <div className="contenedor-boton-video">
-          <Link to="/videos" className="boton-videos">Ver más</Link>
+          <Link to="/UltimasCarreras" className="boton-videos">Ver más</Link>
         </div>
       </div>
     </section>

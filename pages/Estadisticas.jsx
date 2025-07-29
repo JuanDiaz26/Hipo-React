@@ -4,42 +4,48 @@ import "./TablasPages.css";
 
 const Estadisticas = () => {
   const jockeys = [
-    "Rodriguez, Matias Agustin",
-    "Vizcarra, Jose Alfredo",
-    "Medina, Lucas Santiago",
-    "Suarez, Hector Ariel",
-    "Bethencourt, Julian Enrique",
-    "Brito, Francisco Martin",
-    "Barrionuevo, Sergio Ramon Eduardo",
-    "Gonzalez, Lucas"
+    { nombre: "Rodriguez, Matias Agustin", oficial: 13, extra: 1 },
+    { nombre: "Vizcarra, Jose Alfredo", oficial: 12, extra: 4 },
+    { nombre: "Medina, Lucas Santiago", oficial: 9, extra: 1 },
+    { nombre: "Suarez, Hector Ariel", oficial: 8, extra: 3 },
+    { nombre: "Bethencourt, Julian Enrique", oficial: 7, extra: "-" },
   ];
 
   const cuidadores = [
-    "Martinez, Julio Cesar",
-    "Flores, Marcos Elias",
-    "Acosta, Luis Antonio",
-    "Caceres, Martin Eduardo",
-    "Reyes, Pedro Manuel",
-    "Carrizo, Ruben Dario",
-    "Gomez, Cristian Javier",
-    "Morales, Fabian Alberto"
+    { nombre: "Assad, Cesar Alberto", oficial: 12, extra: "-" },
+    { nombre: "Jimenez, Juan Francisco", oficial: 10, extra: 2 },
+    { nombre: "Seme, Julio Orlando", oficial: 6, extra: "-" },
+    { nombre: "Ramos, Daniel Sebastian", oficial: 5, extra: 1 },
+    { nombre: "Brito, Luis Orlando", oficial: 4, extra: 2 },
   ];
 
   const caballerizas = [
-    "Don Ruben",
-    "Los Amigos",
-    "El Fortin",
-    "San Cayetano",
-    "La Herradura",
-    "Las Palmeras",
-    "Santa Elena",
-    "Los Mellizos"
+    { nombre: "Seba Y Cami", oficial: 6, extra: "-" },
+    { nombre: "E.S.T. Piedra Grande", oficial: 5, extra: "-" },
+    { nombre: "Maria Isabel", oficial: 4, extra: 2 },
+    { nombre: "Rubio's", oficial: 4, extra: 1 },
+    { nombre: "Del Valle A.A.", oficial: 4, extra: "-" },
   ];
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
       <Navbar variant="pages" />
       <main className="main-inicio main-pages">
+        <a
+          className="whatsapp-icon .whatsapp-icon-page1"
+          href="https://wa.me/+5493812067808?text=Hola%20buenas,%20una%20consulta."
+          target="_blank"
+        >
+          <i className="bi bi-whatsapp wp-icon"></i>
+        </a>
+
         <div className="container-titulo-pages">
           <h3 className="titulo-pages">
             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
@@ -52,70 +58,90 @@ const Estadisticas = () => {
 
         <div className="separador-pages"></div>
 
-        {/* Botones de navegación rápida */}
-        <div className="text-center my-4">
-          <a href="#jockeys" className="btn btn-success m-2">Jockeys</a>
-          <a href="#cuidadores" className="btn btn-success m-2">Cuidadores</a>
-          <a href="#caballerizas" className="btn btn-success m-2">Caballerizas</a>
+        <div className="botonesNav">
+          <button className="button buttonWpApostar" onClick={() => scrollToSection("jockeys")}>
+            <span className="button-content button-est">Jockeys</span>
+          </button>
+          <button className="button buttonWpApostar" onClick={() => scrollToSection("cuidadores")}>
+            <span className="button-content button-est">Cuidadores</span>
+          </button>
+          <button className="button buttonWpApostar" onClick={() => scrollToSection("caballerizas")}>
+            <span className="button-content button-est">Caballerizas</span>
+          </button>
         </div>
 
-        {/* Tabla de Jockeys */}
-        <div id="jockeys" className="container-programas">
-          <h5 className="subtitulo-tabla">Jockeys</h5>
-          <table>
+        <div className="container-estadisticas">
+
+          {/* Tabla Jockeys */}
+          <div className="titulo-estadisticas">
+            <strong>Estadísticas Jockeys 2025 - Actualizadas 22 de Julio de 2025</strong>
+          </div>
+          <table id="jockeys">
             <thead>
-              <tr className="titulos-tabla-programas">
-                <th>Jockey</th>
-                <th>1° Puestos</th>
+              <tr>
+                <th className="titulos-tabla th-number">Nº</th>
+                <th className="titulos-tabla th-nombre">Jockeys</th>
+                <th className="titulos-tabla th-ofic">Ofic</th>
+                <th className="titulos-tabla th-ofic">Ext.Ofic</th>
               </tr>
             </thead>
             <tbody>
-              {jockeys.map((jockey, i) => (
-                <tr key={i}>
-                  <td>{jockey}</td>
-                  <td></td>
+              {jockeys.map((j, index) => (
+                <tr key={index} className="filas-estadisticas">
+                  <td className="tabla-text-negro">{index + 1}º</td>
+                  <td className="tabla-text-negro">{j.nombre}</td>
+                  <td>{j.oficial}</td>
+                  <td>{j.extra}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
 
-        {/* Tabla de Cuidadores */}
-        <div id="cuidadores" className="container-programas">
-          <h5 className="subtitulo-tabla">Cuidadores</h5>
+          {/* Tabla Cuidadores */}
+          <div className="titulo-estadisticas" id="cuidadores">
+            <strong>Estadísticas Cuidadores 2025 - Actualizadas 20 de Febrero de 2025</strong>
+          </div>
           <table>
             <thead>
-              <tr className="titulos-tabla-programas">
-                <th>Cuidador</th>
-                <th>1° Puestos</th>
+              <tr>
+                <th className="titulos-tabla th-number">Nº</th>
+                <th className="titulos-tabla th-nombre">Cuidadores</th>
+                <th className="titulos-tabla th-ofic">Ofic</th>
+                <th className="titulos-tabla th-ofic">Ext.Ofic</th>
               </tr>
             </thead>
             <tbody>
-              {cuidadores.map((cuidador, i) => (
-                <tr key={i}>
-                  <td>{cuidador}</td>
-                  <td></td>
+              {cuidadores.map((c, index) => (
+                <tr key={index} className="filas-estadisticas">
+                  <td className="tabla-text-negro">{index + 1}º</td>
+                  <td className="tabla-text-negro">{c.nombre}</td>
+                  <td>{c.oficial}</td>
+                  <td>{c.extra}</td>
                 </tr>
               ))}
             </tbody>
           </table>
-        </div>
 
-        {/* Tabla de Caballerizas */}
-        <div id="caballerizas" className="container-programas">
-          <h5 className="subtitulo-tabla">Caballerizas</h5>
+          {/* Tabla Caballerizas */}
+          <div className="titulo-estadisticas" id="caballerizas">
+            <strong>Estadísticas Caballerizas 2025 - Actualizadas 20 de Febrero de 2025</strong>
+          </div>
           <table>
             <thead>
-              <tr className="titulos-tabla-programas">
-                <th>Caballeriza</th>
-                <th>1° Puestos</th>
+              <tr>
+                <th className="titulos-tabla th-number">Nº</th>
+                <th className="titulos-tabla th-nombre">Caballerizas</th>
+                <th className="titulos-tabla th-ofic">Ofic</th>
+                <th className="titulos-tabla th-ofic">Ext.Ofic</th>
               </tr>
             </thead>
             <tbody>
-              {caballerizas.map((caballeriza, i) => (
-                <tr key={i}>
-                  <td>{caballeriza}</td>
-                  <td></td>
+              {caballerizas.map((c, index) => (
+                <tr key={index} className="filas-estadisticas">
+                  <td className="tabla-text-negro">{index + 1}º</td>
+                  <td className="tabla-text-negro">{c.nombre}</td>
+                  <td>{c.oficial}</td>
+                  <td>{c.extra}</td>
                 </tr>
               ))}
             </tbody>
