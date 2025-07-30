@@ -702,3 +702,14 @@ figcaption {
 }
 
 /******* FIN PAGINA HISTORIA *******/
+
+/******* PAGINA CARRERAS DESTACADAS *******/
+
+.premioBatalla {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/******* FIN PAGINA CARRERAS DESTACADAS *******/

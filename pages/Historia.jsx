@@ -36,7 +36,7 @@ const Historia = () => {
         {/* Historia general */}
         <div className="historia">
           <figure>
-            <img src="/img/hipo-inicios.png" alt="imagen inicios del hipodromo" loading="lazy" />
+            <img src="..src/assets/hipo-inicios.png" alt="imagen inicios del hipodromo" loading="lazy" />
             <figcaption>
               Miles de personas asistieron a la inauguración del centro hípico, el 2 de agosto de 1942.
             </figcaption>
@@ -68,7 +68,7 @@ const Historia = () => {
               Más de <strong>80 peones, capataces, vareadores, domadores, herreros, talabarteros, proveedores de forrajes, transportistas y veterinarios</strong> están vinculados directa e indirectamente con esta actividad.
             </p>
             <figure>
-              <img src="/img/hipo-aspecto-social.png" alt="imagen del aspecto social del hipódromo" loading="lazy" />
+              <img src="..src/assets/hipo-aspecto-social.png" alt="imagen del aspecto social del hipódromo" loading="lazy" />
               <figcaption>Aproximadamente 500 familias viven del turf en la villa hípica o sector de caballerizas y zonas aledañas.</figcaption>
             </figure>
           </div>
@@ -88,7 +88,7 @@ const Historia = () => {
           <div className="separador-pages"></div>
           <div className="plantelEquino historia">
             <figure>
-              <img src="/img/hipo-plantel-equino.png" alt="imagen del plantel equino del hipódromo" loading="lazy" />
+              <img src="..src/assets/hipo-plantel-equino.png" alt="imagen del plantel equino del hipódromo" loading="lazy" />
               <figcaption>En ambas pistas del Hipódromo están alojados permanentemente y entrenan aproximadamente 300 caballos.</figcaption>
             </figure>
             <p>

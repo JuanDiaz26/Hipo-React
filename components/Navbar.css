@@ -1,6 +1,7 @@
-.navbar {
-    padding: 5px !important;
+.navbar-pages-estilo {
+  padding: 5px !important;
 }
+
 
 .navbar-pages {
   min-height: 70px;
@@ -9,7 +10,6 @@
   justify-content: end;
   background: rgb(251, 251, 251);
   background: linear-gradient(90deg, #fbfbfb 1%, #248589 40%, #f16536 55%);
-
 }
 
 .navbar-pages .navbar-nav .nav-link {

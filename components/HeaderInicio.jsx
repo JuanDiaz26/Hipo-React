@@ -1,29 +1,6 @@
 import React from "react";
 import "./HeaderInicio.css";
-import { Link } from 'react-router-dom';
 import Navbar from "./Navbar"; // Importamos el nuevo componente
-
-
-<div className="contenedorBotonesCentro">
-  <Link to="/apuestas" className="button" id="buttonApp" data-tooltip="Size: 20Mb">
-    <div className="button-wrapper">
-      <div className="text">
-        <i className="bi bi-google-play iconoBotonCentro"></i>App de apuestas
-      </div>
-      <span className="icon">...</span>
-    </div>
-  </Link>
-
-  <Link to="/programa" className="button" id="buttonPrograma" data-tooltip="Size: 20Mb">
-    <div className="button-wrapper">
-      <div className="text">
-        <i className="bi bi-newspaper iconoBotonCentro"></i>Programa Oficial
-      </div>
-      <span className="icon">...</span>
-    </div>
-  </Link>
-</div>
-
 
 const HeaderInicio = () => {
   return (
@@ -41,7 +18,7 @@ const HeaderInicio = () => {
 
       {/* CENTRO VIDEO */}
       <div className="contenedor-centro-video">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/">
           <img
             className="logo-visible"
             src="../src/assets/logohipoblanco.png"
@@ -53,7 +30,7 @@ const HeaderInicio = () => {
         <br />
         <div className="contenedorBotonesCentro">
   <a
-    href="https://ejemplo.com/app"
+    href="https://hiptuc.netlify.app/"
     target="_blank"
     rel="noopener noreferrer"
     className="button"
@@ -79,7 +56,7 @@ const HeaderInicio = () => {
   </a>
 
   <a
-    href="https://drive.google.com/descarga-programa"
+    href="https://drive.google.com/file/d/1OKmNUkLmz0khlrrxuFsqpphnD1bOoaxI/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
     className="button"
