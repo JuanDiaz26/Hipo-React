@@ -11,17 +11,17 @@ const Navbar = ({ variant }) => {
       <nav
         className={`navbar navbar-expand-md fixed-top ${isInicio ? "navbar-dark navbar-inicio-estilo" : "navbar-dark navbar-pages-estilo"}`}
       >
-        <div className="container-fluid">
-          {!isInicio && (
-            <a className="navbar-brand" href="/">
-              <img
-                className="logo-hipo-inicio"
-                src="../src/assets/logohipocolor.png"
-                alt="Logo HipodromodeTucuman"
-                loading="lazy"
-              />
-            </a>
-          )}
+        <div className="container-fluid ">
+
+          {/* Logo cambia según la página */}
+          <a className="navbar-brand" href="/">
+            <img
+              className={`logo-hipo-inicio ${isInicio ? "d-md-none" : ""}`}
+              src={isInicio ? "../src/assets/logohipoblanco.png" : "../src/assets/logohipocolor.png"}
+              alt="Logo HipodromodeTucuman"
+              loading="lazy"
+            />
+          </a>
           <button
             className="navbar-toggler"
             type="button"
