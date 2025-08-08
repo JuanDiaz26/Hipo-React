@@ -5,12 +5,7 @@ import Navbar from "./Navbar"; // Importamos el nuevo componente
 const HeaderInicio = () => {
   return (
     <header id="header-inicio">
-      <img
-        className="imagen-fondo-movil"
-        src="../src/assets/fondo.webp"
-        alt="Imagen portada hipodromodetucuman"
-        loading="lazy"
-      />
+      <div className="imagen-fondo-movil"></div>
       <div className="capa"></div>
 
       {/* NAVBAR REUTILIZABLE */}
@@ -56,7 +51,7 @@ const HeaderInicio = () => {
   </a>
 
   <a
-    href="https://drive.google.com/file/d/1OKmNUkLmz0khlrrxuFsqpphnD1bOoaxI/view?usp=sharing"
+    href="https://drive.google.com/file/d/1jUUE2d8PBu_UEDa6chjNO41Vt2U0x6P3/view?usp=sharing"
     target="_blank"
     rel="noopener noreferrer"
     className="button"

@@ -5,82 +5,88 @@ import "./TablasPages.css";
 
 const escalas = [
   {
-    categoria: "Condicional",
-    premios: [
-      ["1° Puesto", "$ 829.000"],
-      ["2° Puesto", "$ 248.700"],
-      ["3° Puesto", "$ 207.250"],
-      ["4° Puesto", "$ 165.800"],
-      ["5° Puesto", "$ 124.350"],
-      ["6° Puesto", "$ 82.900"],
-    ],
-  },
+  categoria: "Condicional",
+  premios: [
+    ["1° Puesto", "$ 1.310.900"],
+    ["2° Puesto", "$ 393.200"],
+    ["3° Puesto", "$ 327.700"],
+    ["4° Puesto", "$ 262.100"],
+    ["5° Puesto", "$ 196.600"],
+    ["6° Puesto", "$ 131.100"],
+  ],
+}
+,
     {
-    categoria: "Condicional",
-    premios: [
-      ["1° Puesto", "$ 829.000"],
-      ["2° Puesto", "$ 248.700"],
-      ["3° Puesto", "$ 207.250"],
-      ["4° Puesto", "$ 165.800"],
-      ["5° Puesto", "$ 124.350"],
-      ["6° Puesto", "$ 82.900"],
-    ],
-  },
-    {
-    categoria: "Condicional",
-    premios: [
-      ["1° Puesto", "$ 829.000"],
-      ["2° Puesto", "$ 248.700"],
-      ["3° Puesto", "$ 207.250"],
-      ["4° Puesto", "$ 165.800"],
-      ["5° Puesto", "$ 124.350"],
-      ["6° Puesto", "$ 82.900"],
-    ],
-  },
-    {
-    categoria: "Condicional",
-    premios: [
-      ["1° Puesto", "$ 829.000"],
-      ["2° Puesto", "$ 248.700"],
-      ["3° Puesto", "$ 207.250"],
-      ["4° Puesto", "$ 165.800"],
-      ["5° Puesto", "$ 124.350"],
-      ["6° Puesto", "$ 82.900"],
-    ],
-  },
-    {
-    categoria: "Condicional",
-    premios: [
-      ["1° Puesto", "$ 829.000"],
-      ["2° Puesto", "$ 248.700"],
-      ["3° Puesto", "$ 207.250"],
-      ["4° Puesto", "$ 165.800"],
-      ["5° Puesto", "$ 124.350"],
-      ["6° Puesto", "$ 82.900"],
-    ],
-  },
-    {
-    categoria: "Condicional",
-    premios: [
-      ["1° Puesto", "$ 829.000"],
-      ["2° Puesto", "$ 248.700"],
-      ["3° Puesto", "$ 207.250"],
-      ["4° Puesto", "$ 165.800"],
-      ["5° Puesto", "$ 124.350"],
-      ["6° Puesto", "$ 82.900"],
-    ],
-  },
-  {
-    categoria: "Potrillos",
-    premios: [
-      ["1° Puesto", "$ 1.492.800"],
-      ["2° Puesto", "$ 447.840"],
-      ["3° Puesto", "$ 373.200"],
-      ["4° Puesto", "$ 298.560"],
-      ["5° Puesto", "$ 223.920"],
-      ["6° Puesto", "$ 149.280"],
-    ],
-  },
+  categoria: "Potrillos",
+  premios: [
+    ["1° Puesto", "$ 2.360.500"],
+    ["2° Puesto", "$ 708.100"],
+    ["3° Puesto", "$ 590.100"],
+    ["4° Puesto", "$ 472.100"],
+    ["5° Puesto", "$ 354.000"],
+    ["6° Puesto", "$ 236.000"],
+  ],
+},
+{
+  categoria: "Extraoficial",
+  premios: [
+    ["1° Puesto", "$ 892.600"],
+    ["2° Puesto", "$ 267.800"],
+    ["3° Puesto", "$ 223.100"],
+    ["4° Puesto", "$ 178.500"],
+    ["5° Puesto", "$ 133.900"],
+    ["6° Puesto", "$ 89.200"],
+  ],
+}
+,
+{
+  categoria: "Especial",
+  premios: [
+    ["1° Puesto", "$ 1.973.300"],
+    ["2° Puesto", "$ 592.000"],
+    ["3° Puesto", "$ 493.300"],
+    ["4° Puesto", "$ 394.600"],
+    ["5° Puesto", "$ 296.000"],
+    ["6° Puesto", "$ 197.300"],
+  ],
+}
+,
+{
+  categoria: "Ext. 3 y + edad",
+  premios: [
+    ["1° Puesto", "$ 1.965.300"],
+    ["2° Puesto", "$ 589.600"],
+    ["3° Puesto", "$ 491.300"],
+    ["4° Puesto", "$ 393.000"],
+    ["5° Puesto", "$ 294.800"],
+    ["6° Puesto", "$ 196.500"],
+  ],
+}
+,
+{
+  categoria: "Clásico Potrillos",
+  premios: [
+    ["1° Puesto", "$ 3.400.000"],
+    ["2° Puesto", "$ 1.020.000"],
+    ["3° Puesto", "$ 850.000"],
+    ["4° Puesto", "$ 680.000"],
+    ["5° Puesto", "$ 510.000"],
+    ["6° Puesto", "$ 340.000"],
+  ],
+}
+,
+{
+  categoria: "Clásico Adultos",
+  premios: [
+    ["1° Puesto", "$ 3.000.000"],
+    ["2° Puesto", "$ 900.000"],
+    ["3° Puesto", "$ 750.000"],
+    ["4° Puesto", "$ 600.000"],
+    ["5° Puesto", "$ 450.000"],
+    ["6° Puesto", "$ 300.000"],
+  ],
+}
+,
   // Agrega el resto igual que arriba (por brevedad solo puse dos)
 ];
 

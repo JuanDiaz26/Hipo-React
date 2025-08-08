@@ -21,11 +21,11 @@ const MainContainer = () => {
       <div className="container-scroll-novedad">
         <div className="novedades">
           {[
-            "27 de Julio de 2025",
-            "27 de Julio de 2025",
-            "27 de Julio de 2025",
-            "27 de Julio de 2025",
-            "27 de Julio de 2025"
+            "10 de Agosto de 2025",
+            "10 de Agosto de 2025",
+            "10 de Agosto de 2025",
+            "10 de Agosto de 2025",
+            "10 de Agosto de 2025"
           ].map((fecha, index) => (
             <div className="novedad" key={index}>
               <a className="enlace-novedad-scroll" href="#">
@@ -44,13 +44,13 @@ const MainContainer = () => {
             <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="/img/pruebacarousel1.webp" className="d-block w-100" alt="Placa de carousel" loading="lazy" />
+                  <img src="../src/assets/carouselnew.jpg" className="d-block w-100" alt="Placa de carousel" loading="lazy" />
                 </div>
                 <div className="carousel-item">
-                  <img src="/img/pruebacarousel1.webp" className="d-block w-100" alt="Placa de carousel" loading="lazy" />
+                  <img src="../src/assets/carouselnew.jpg" className="d-block w-100" alt="Placa de carousel" loading="lazy" />
                 </div>
                 <div className="carousel-item">
-                  <img src="/img/pruebacarousel1.webp" className="d-block w-100" alt="Placa de carousel" loading="lazy" />
+                  <img src="../src/assets/carouselnew.jpg" className="d-block w-100" alt="Placa de carousel" loading="lazy" />
                 </div>
               </div>
               <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">

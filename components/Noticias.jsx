@@ -2,30 +2,32 @@ import React from "react";
 import "./Noticias.css";
 
 const noticias = [
-  {
-    id: 1,
-    titulo: 'El Gran Cabron se lleva el Clásico "82º Aniv. Hipódromo de Tucumán"',
-    texto: `El pupilo del stud Los Tios, bajo el cuidado de Hector Peralta, se quedó con el Clasico en un tiempo de 1'38"4/5. Conducido por Jose Vizcarra, se impuso por 4 cuerpos sobre Watchtower.`,
-    imagen: "/img/el-gran-cabron-noti.webp",
-    fecha: "05Ago24",
-    video: "https://www.youtube.com/embed/kG7H9-34bic?si=wpjcLQlOdE_S_u_C",
-  },
-  {
-    id: 2,
-    titulo: "Galore se queda con la cuadrera",
-    texto: `El zaino cuidado por Daniel Ramos, ganó la carrera de 500 metros en un tiempo de 27"3/5. Conducido por Lucas Gonzalez, logró imponerse por 2 1/2 cuerpos.`,
-    imagen: "/img/galore.webp",
-    fecha: "05Ago24",
-    video: "https://www.youtube.com/embed/sBDce_zQPiw?si=24kJr2i3z_oYLqbq",
-  },
-  {
-    id: 3,
-    titulo: "Homenaje a Jorge Correa por 50 años de servicio.",
-    texto: `Ayer se realizó un emotivo homenaje al fotógrafo Jorge Correa, un ícono del Hipódromo de Tucumán, por sus 50 años de servicio. Se dedicó una carrera a su nombre como premio y se le entregó una distinción en reconocimiento a su destacada trayectoria.`,
-    imagen: "/img/jorge.webp",
-    fecha: "05Ago24",
-    video: null,
-  },
+{
+  id: 1,
+  titulo: 'Suffok brilló en el Clásico 110º Aniv. Caja Popular',
+  texto: `Con Facundo Morán en las riendas, el pupilo del stud L.C.J se impuso por 1/2 cuerpo en el clásico central del domingo. Entrenado por L. Noguera Assad, marcó 2'8" 4/5 para los 2.000 metros y sumó su quinta victoria oficial.`,
+  imagen: "../src/assets/suffok.jpg",
+  fecha: "27Jul25",
+  video: "youtube.com", // completamos cuando tengas el link
+}
+,
+{
+  id: 2,
+  titulo: 'Mock Joy dio el golpe en el Estrellas Tucumanas Junior',
+  texto: `Representando al stud 5 De Copas, el zaino preparado por S.D. Cuellar y conducido por Matías Rodríguez, se quedó con el clásico reservado para productos de 3 años. Con una sólida actuación, cruzó el disco al frente en 1'12" 4/5 para los 1.200 metros.`,
+  imagen: "../src/assets/mockjoy.jpg",
+  fecha: "27Jul25",
+  video: "youtube.com", // completar cuando tengas el link
+}
+,
+{
+  id: 3,
+  titulo: 'En el final de la jornada, ganó Fin del Mundo',
+  texto: `La décima carrera tuvo un cierre con nombre propio: Fin del Mundo se impuso en el Premio "Dr. Ernesto Padilla", marcando el broche de oro de la fecha. Con Matías Rodríguez en la silla, el defensor del stud Sta Federación (Sde), al cuidado de C.A. Assad, cronometró 1'26" 3/5 para los 1.400 metros.`,
+  imagen: "../src/assets/findelmundo.jpg",
+  fecha: "27Jul25",
+  video: "youtube.com", // agregar link cuando lo tengas
+},
 ];
 
 const Noticias = () => {

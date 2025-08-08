@@ -86,19 +86,34 @@ const ComoApostar = () => {
           <strong className="titulos-descargar-call">
             Descargá la aplicación desde el siguiente link:
           </strong>
-          <button id="buttonDownloadApp" className="button buttonWpApostar">
+          <a
+            href="https://hiptuc.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button buttonWpApostar"
+            id="buttonDownloadApp"
+          >
             <span className="button-content button-est">
               <i className="bi bi-download"></i> Descargar
             </span>
-          </button>
+          </a>
+            
           <strong className="titulos-descargar-call">
             O solicita la app desde nuestro call center
           </strong>
-          <button id="buttonCallCenter" className="button buttonWpApostar">
+            
+          <a
+            href="https://wa.me/+5493812067808?text=Hola%20buenas,%20una%20consulta."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="button buttonWpApostar"
+            id="buttonCallCenter"
+          >
             <span className="button-content button-est">
               <i className="bi bi-whatsapp"></i> Call Center
             </span>
-          </button>
+          </a>
+            
 
           <div className="pasos">
             <h3 className="titulo-pages">

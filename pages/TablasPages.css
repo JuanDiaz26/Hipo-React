@@ -172,6 +172,10 @@ th {
 
 .buttonWpApostar {
   background-color: #128C7E !important;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* Esto centra verticalmente */
 }
 
 .button:hover::before {
