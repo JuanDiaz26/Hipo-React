@@ -2,6 +2,8 @@ import React from "react";
 import "./HeaderInicio.css";
 import Navbar from "./Navbar"; // Importamos el nuevo componente
 
+import logoBlanco from "../src/assets/logohipoblanco.png";
+
 const HeaderInicio = () => {
   return (
     <header id="header-inicio">
@@ -16,7 +18,7 @@ const HeaderInicio = () => {
         <a className="navbar-brand" href="/">
           <img
             className="logo-visible"
-            src="../src/assets/logohipoblanco.png"
+            src={logoBlanco}
             alt="Logo HipodromodeTucuman"
             loading="lazy"
           />
