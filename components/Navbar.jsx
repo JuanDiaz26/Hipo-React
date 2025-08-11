@@ -3,6 +3,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./Navbar.css";
 
+// 👇 Importá las imágenes (Vite las resuelve en build)
+import logoBlanco from "../src/assets/logohipoblanco.png";
+import logoColor  from "../src/assets/logohipocolor.png";
+
 const Navbar = ({ variant }) => {
   const isInicio = variant === "inicio";
 
@@ -12,16 +16,16 @@ const Navbar = ({ variant }) => {
         className={`navbar navbar-expand-md fixed-top ${isInicio ? "navbar-dark navbar-inicio-estilo" : "navbar-dark navbar-pages-estilo"}`}
       >
         <div className="container-fluid ">
-
           {/* Logo cambia según la página */}
           <a className="navbar-brand" href="/">
             <img
               className={`logo-hipo-inicio ${isInicio ? "d-md-none" : ""}`}
-              src={isInicio ? "../src/assets/logohipoblanco.png" : "../src/assets/logohipocolor.png"}
+              src={isInicio ? logoBlanco : logoColor}
               alt="Logo HipodromodeTucuman"
               loading="lazy"
             />
           </a>
+
           <button
             className="navbar-toggler"
             type="button"
