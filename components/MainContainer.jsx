@@ -24,11 +24,11 @@ const MainContainer = () => {
       <div className="container-scroll-novedad">
         <div className="novedades">
           {[
-            "10 de Agosto de 2025",
-            "10 de Agosto de 2025",
-            "10 de Agosto de 2025",
-            "10 de Agosto de 2025",
-            "10 de Agosto de 2025",
+            "24 de Agosto de 2025",
+            "24 de Agosto de 2025",
+            "24 de Agosto de 2025",
+            "24 de Agosto de 2025",
+            "24 de Agosto de 2025",
           ].map((fecha, index) => (
             <div className="novedad" key={index}>
               <a className="enlace-novedad-scroll" href="#">

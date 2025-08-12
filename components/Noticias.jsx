@@ -7,14 +7,14 @@ import mockjoyImg from "../src/assets/mockjoy.jpg";
 import findelmundoImg from "../src/assets/findelmundo.jpg";
 
 const noticias = [
-  {
-    id: 1,
-    titulo: 'Suffok brilló en el Clásico 110º Aniv. Caja Popular',
-    texto: `Con Facundo Morán en las riendas, el pupilo del stud L.C.J se impuso por 1/2 cuerpo en el clásico central del domingo. Entrenado por L. Noguera Assad, marcó 2'8" 4/5 para los 2.000 metros y sumó su quinta victoria oficial.`,
-    imagen: suffokImg,
-    fecha: "27Jul25",
-    video: "youtube.com", // completar cuando tengas el link
-  },
+{
+  id: 1,
+  titulo: 'Standartd brilló en el Clásico 83º Aniversario del Hipódromo de Tucumán',
+  texto: `Con José A. Vizcarra en las riendas, el pupilo del stud Piedra Grande se impuso con autoridad en el Clásico "83º Aniversario Hipódromo de Tucumán", disputado sobre 1.600 metros. El zaino de 6 años, entrenado por C.A. Assad, marcó un tiempo de 1'38" 1/5 y superó por 2 1/2 cuerpos a Golden Warrior. De esta forma, Standartd sumó una nueva victoria en su primera presentación en Tucumán.`,
+  imagen: suffokImg, // colocar aquí la imagen importada del caballo
+  fecha: "10Ago25",
+  video: "", // colocar el link de YouTube cuando esté disponible
+},
   {
     id: 2,
     titulo: 'Mock Joy dio el golpe en el Estrellas Tucumanas Junior',
