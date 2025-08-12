@@ -13,6 +13,7 @@ body {
     border-radius: 0 0 85% 85% / 25%;
 }
 
+
 .imagen-fondo-movil {
   position: absolute;
   top: 0;
@@ -20,7 +21,7 @@ body {
   width: 100%;
   height: 450px;
   z-index: -2;
-  background-image: url('../src/assets/fondonew.jpg');
+  background-image: url('/fondonew.jpg'); /* Ojo: barra inicial */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
