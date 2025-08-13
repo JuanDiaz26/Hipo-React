@@ -59,27 +59,47 @@
   flex: 1;
 }
 
-/* título */
+/* título (clamp 2) */
 .card-titulo-noti {
   font-family: var(--titulo);
   font-size: 20px;
   line-height: 1.2;
   margin: 0 0 2px;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+
+  /* Fallback estándar */
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  display: -webkit-box; /* para navegadores WebKit */
+
+  /* WebKit-only (encapsulado para que el linter no se queje) */
+}
+@supports (-webkit-line-clamp: 1) {
+  .card-titulo-noti {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 5;
+  }
 }
 
 /* párrafo: 5 líneas en todos los tamaños */
 .card-parrafo-noti {
   color: grey;
   line-height: 1.35;
-  display: -webkit-box;
-  -webkit-line-clamp: 5;   /* ← 5 líneas siempre */
-  -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; /* para navegadores WebKit */
+  margin-bottom: 0;
 }
+
+@supports (-webkit-line-clamp: 1) {
+  .card-parrafo-noti {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+  }
+}
+
 
 /* ====== pie ====== */
 .card-footer {
@@ -118,10 +138,9 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
   }
-  .card-parrafo-noti { -webkit-line-clamp: 5; } /* explícito en desktop grande */
+  /* mantenemos 5 líneas también en desktop grande */
 }
 
-/* === Mobile: con el mismo clamp (5) y buen aire === */
 @media (max-width: 576px) {
   .contenedor-noticias {
     padding-left: 24px;
@@ -132,12 +151,12 @@
 
   .card {
     width: 100%;
-    margin-bottom: 14px; /* colchón extra por si alguna regla pisa el gap */
+    margin-bottom: 14px; /* “colchón” extra por si otra regla pisa el gap */
   }
 
   .card-img-top { aspect-ratio: 3 / 2; } /* un poco más alta, luce mejor en mobile */
   .card-titulo-noti { font-size: 18px; }
-  .card-parrafo-noti { -webkit-line-clamp: 5; } /* ← mantiene 5 líneas también en mobile */
+  /* el clamp de 5 líneas ya aplica vía @supports arriba */
 }
 
 /* Tablet chica */
