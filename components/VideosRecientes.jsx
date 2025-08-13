@@ -21,15 +21,13 @@ const VideosRecientes = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">7º Carrera - Clásico "82º<br />Aniv. Hipódromo de Tucumán"</h5>
+                <h5 className="card-title">10º Carrera - Clásico "83º<br />Aniv. Hipódromo de Tucumán"</h5>
                 <p className="card-text">
-                  <i className="bi bi-award-fill medalla-oro"></i> El Gran Cabron
+                  <i className="bi bi-award-fill medalla-oro"></i> Standartd
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-                <iframe className="iframe-video" src="https://www.youtube.com/embed/kG7H9-34bic?si=yZy2-vQR8aGNrN15"
-                  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/C2JBFKN1lcg?si=bEQwmsd5L3avGOT1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -38,9 +36,9 @@ const VideosRecientes = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">8º Carrera - Premio<br /> "Slew Of Valid"</h5>
+                <h5 className="card-title">11º Carrera - Premio<br /> "Dr. Miguel Critto"</h5>
                 <p className="card-text">
-                  <i className="bi bi-award-fill medalla-oro"></i> Galore
+                  <i className="bi bi-award-fill medalla-oro"></i> Cashisking
                 </p>
               </div>
               <div className="ratio ratio-16x9">
@@ -55,9 +53,9 @@ const VideosRecientes = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">9º Carrera - Clásico <br /> "Tres Haras"</h5>
+                <h5 className="card-title">6º Carrera - Premio <br /> "Juan Santos Leguizamon"</h5>
                 <p className="card-text">
-                  <i className="bi bi-award-fill medalla-oro"></i> ER Tintorera
+                  <i className="bi bi-award-fill medalla-oro"></i> Lucky Sant
                 </p>
               </div>
               <div className="ratio ratio-16x9">
