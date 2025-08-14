@@ -2,34 +2,34 @@
   import "./Noticias.css";
 
   // 👇 Import de imágenes desde src/assets
-  import suffokImg from "../src/assets/suffok.jpg";
-  import mockjoyImg from "../src/assets/mockjoy.jpg";
-  import findelmundoImg from "../src/assets/findelmundo.jpg";
+  import noticia1 from "../src/assets/Clasico.jpg";
+  import noticia2 from "../src/assets/Potrillo.jpg";
+  import noticia3 from "../src/assets/Cashisking.jpg";
 
   const noticias = [
 {
   id: 1,
   titulo: 'Standartd brilló en el Clásico 83º Aniversario del Hipódromo de Tucumán',
   texto: `Con José A. Vizcarra en las riendas, el pupilo del stud Piedra Grande ganó con autoridad el Clásico "83º Aniversario", sobre 1.600 metros. El zaino de 6 años, entrenado por C.A. Assad, superó por 2 1/2 cuerpos a Golden Warrior.`,
-  imagen: suffokImg,
+  imagen: noticia1,
   fecha: "10Ago25",
   video: "youtube.com",
 },
   {
   id: 2,
   titulo: 'Lucky Sant se quedó con el Premio Juan Santos Leguizamón',
-  texto: `En la prueba para potrillos de 3 años (800 m), Lucky Sant, del stud Rubio's y con José A. Vizcarra, ganó con solvencia el Premio "Juan Santos Leguizamón". El pupilo de D.S. Ramos marcó 45" 3/5 y superó por 1/2 pescuezo a Curioso Honey. Tercero quedó Miel Escondida a 1 cuerpo. El zaino, hijo de Winning Prize, suma ahora 1 triunfo extraoficial en 3 salidas.`,
-  imagen: mockjoyImg,
+  texto: `En la prueba para potrillos de 3 años, Lucky Sant, del stud Rubio's y con José A. Vizcarra, ganó con solvencia el Premio "Juan Santos Leguizamón". El pupilo de D.S. Ramos marcó 45" 3/5 y superó por 1/2 pescuezo a Curioso Honey. Tercero quedó Miel Escondida a 1 cuerpo. El zaino, hijo de Winning Prize, suma ahora 1 triunfo extraoficial en 3 salidas.`,
+  imagen: noticia2,
   fecha: "10Ago25",
   video: "youtube.com",
 },
 {
   id: 3,
   titulo: 'Cashisking dio el batacazo en el Premio "Dr. Miguel Critto"',
-  texto: `En una sorpresiva actuación, Cashisking, del stud El Pony Leguizamón y con Francisco M. Brito en la silla, se impuso en el Premio "Dr. Miguel Critto" (1.200 m) con un dividendo de $57,90. El hijo de Forge dejó vacantes importantes apuestas como la Cuatrifecta y el Quintuplo, superando por 1 cuerpo a Grand Silvi y relegando a Piu Rimout al tercer lugar. Fue su segundo triunfo en 12 presentaciones en Tucumán.`,
-  imagen: findelmundoImg, // importar la imagen correspondiente
+  texto: `En una sorpresiva actuación, Cashisking, del stud "El Pony Leguizamón" y con Francisco M. Brito en la silla, se impuso en el Premio "Dr. Miguel Critto" con un dividendo de $57,90. El hijo de Forge superó por 1 cuerpo a Grand Silvi y relegó a Piu Rimout al tercer lugar, dejando apuestas vacantes. Fue su segundo triunfo en 12 presentaciones en Tucumán.`,
+  imagen: noticia3,
   fecha: "10Ago25",
-  video: "youtube.com", // colocar link de YouTube cuando esté disponible
+  video: "youtube.com"
 },
   ];
 
