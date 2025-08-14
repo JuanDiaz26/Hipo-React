@@ -3,8 +3,8 @@
 
   // 👇 Import de imágenes desde src/assets
   import noticia1 from "../src/assets/Clasico.jpg";
-  import noticia2 from "../src/assets/Potrillo.jpg";
-  import noticia3 from "../src/assets/Cashisking.jpg";
+  import noticia2 from "../src/assets/Potrillo.JPG";
+  import noticia3 from "../src/assets/Cashisking.JPG";
 
   const noticias = [
 {
