@@ -1,0 +1,136 @@
+/* ====== contenedor general (igual “look” que .main-noticias) ====== */
+.main-estadisticas {
+  width: 93%;
+  margin: 10px auto 20px;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,.20);
+  background: #fff;
+  padding: 10px 0 22px;
+  border-radius: 4px;
+}
+
+/* subtítulo bajo el h2 */
+.intro-estadisticas {
+  width: 90%;
+  margin: 0 auto 14px;
+  color: #6c757d;
+}
+
+/* ====== grilla (parienta de .contenedor-noticias) ====== */
+.contenedor-estadisticas {
+  width: 95%;
+  margin: 0 auto 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  justify-items: center;
+  align-items: stretch;
+  padding: 0 8px;
+}
+
+/* ====== tarjeta TOP con fondo de color ====== */
+.card-top {
+  width: 95%;
+  margin: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow:
+    0 2px 6px rgba(0,0,0,.08),
+    0 8px 16px rgba(0,0,0,.06);
+  transition: transform .18s ease, box-shadow .18s ease;
+  border: 0; /* sin borde gris */
+}
+.card-top:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 6px 14px rgba(0,0,0,.12),
+    0 14px 28px rgba(0,0,0,.10);
+}
+
+/* Encabezado dentro de la tarjeta (título + badge TOP 3) */
+.encabezado-card{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-bottom:.5rem;
+}
+
+/* Variantes de color (según tu imagen) */
+.card-top--jockeys {
+  background: linear-gradient(180deg, #f2b705 0%, #e4a500 100%);
+  color: #fff;
+}
+.card-top--entrenadores {
+  background: linear-gradient(180deg, #2f62ff 0%, #2549bf 100%);
+  color: #fff;
+}
+.card-top--studs {
+  background: linear-gradient(180deg, #1ea463 0%, #158a52 100%);
+  color: #fff;
+}
+
+/* Lista de posiciones */
+.lista-top { list-style: none; padding: 0; }
+.lista-top li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+.lista-top li:last-child { border-bottom: 0; }
+.lista-top .left { display: flex; align-items: center; gap: 12px; }
+.lista-top .right { text-align: right; }
+
+/* Badge 1,2,3 */
+.rank-badge {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+}
+
+/* responsive igual que noticias */
+@media (min-width: 1200px) {
+  .contenedor-estadisticas {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contenedor-estadisticas {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    gap: 24px;
+  }
+  .card-top { width: 100%; }
+}
+
+.boton-estadisticas {
+      text-align: center;
+  width: 180px;
+  padding: 5px 20px;
+  margin: 20px;
+  background-color: #f16536;
+  font-family: var(--links); /* Asegurate de definirla en tu archivo global */
+  font-size: 18px;
+  color: white;
+  border: solid 1px #f16536;
+  border-radius: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.boton-estadisticas:hover {
+    background-color: #e24c1a;
+}
