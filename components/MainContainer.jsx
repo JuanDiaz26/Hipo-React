@@ -4,7 +4,9 @@ import Calendar from "./Calendar";
 import "./MainContainer.css";
 
 // 👇 Import de la imagen desde src/assets
-import carouselImg from "../src/assets/carouselnew.jpg";
+import carouselImg from "../src/assets/carousel-ricardo.png";
+import carouselImg2 from "../src/assets/carousel-placa2.png";
+import carouselImg3 from "../src/assets/carousel-placa3.png";
 
 const MainContainer = () => {
   return (
@@ -24,11 +26,11 @@ const MainContainer = () => {
       <div className="container-scroll-novedad">
         <div className="novedades">
           {[
-            "24 de Agosto de 2025",
-            "24 de Agosto de 2025",
-            "24 de Agosto de 2025",
-            "24 de Agosto de 2025",
-            "24 de Agosto de 2025",
+            "24 de Septiembre de 2025",
+            "24 de Septiembre de 2025",
+            "24 de Septiembre de 2025",
+            "24 de Septiembre de 2025",
+            "24 de Septiembre de 2025",
           ].map((fecha, index) => (
             <div className="novedad" key={index}>
               <a className="enlace-novedad-scroll" href="#">
@@ -63,7 +65,7 @@ const MainContainer = () => {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={carouselImg}
+                    src={carouselImg2}
                     className="d-block w-100"
                     alt="Placa de carousel"
                     loading="lazy"
@@ -71,7 +73,7 @@ const MainContainer = () => {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={carouselImg}
+                    src={carouselImg3}
                     className="d-block w-100"
                     alt="Placa de carousel"
                     loading="lazy"

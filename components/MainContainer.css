@@ -95,32 +95,50 @@
 }
 
 
-/* CAROUSEL */
-.carousel {
-    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.35);
-    margin-top: 10px;
-    width: 94%;
-    margin: auto;
+/* Contenedor con 16:9 SIEMPRE, y altura limitada */
+.contenedorCarousel {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 0 0 24px 0;
+  /* Evita que en pantallas grandes se haga gigante (y pierda nitidez) */
+  max-height: 520px;   /* ajustá a gusto: 520–600px */
+  min-height: 320px;   /* asegura presencia en móviles */
 }
 
-@media (min-width: 950px) {
-    .carousel {
-        margin-top: 20px;
-    }
+/* El carrusel ocupa toda esa altura */
+.contenedorCarousel .carousel,
+.contenedorCarousel .carousel-inner,
+.contenedorCarousel .carousel-item { height: 100%; }
+
+/* Fondo por transición (opcional) */
+.contenedorCarousel .carousel-item {
+  background: linear-gradient(135deg, #248689 0%, #f16536 100%);
+  overflow: hidden;
+}
+
+/* La placa llena el espacio sin deformarse */
+.contenedorCarousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+/* Si querés un toque más alto en desktop, subí SOLO el max-height */
+@media (min-width: 1200px) {
+  .contenedorCarousel { max-height: 580px; }
+}
+
+/* Tus estilos existentes */
+.carousel {
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.35);
+  width: 100%;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
-}
-
-/* SEPARADOR */
-.separador {
-    width: 60%;
-    margin: 20px auto;
-    background-color: rgb(0, 0, 0, 0.2);
-    padding: 1px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
 
 .contenedor-botones-inicio { 
@@ -262,7 +280,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 10px;
+  padding: 30px;
 }
 
 @media (min-width: 992px) {
