@@ -9,12 +9,22 @@ const months = [
 const daysOfWeek = ["D", "L", "M", "X", "J", "V", "S"];
 
 const linksData = [
-  { year: 2025, month: 7, day: 13, url: "/carreras/13-julio" },
-  { year: 2025, month: 7, day: 27, url: "/carreras/27-julio" },
-  { year: 2025, month: 8, day: 10, url: "/carreras/10-agosto" },
-  { year: 2025, month: 8, day: 24, url: "/carreras/24-agosto" },
-  { year: 2025, month: 9, day: 7,  url: "https://drive.google.com/file/d/1-DB8lVcb_sUzjWB9AzZeceLvtkEasS1d/view?usp=sharing" },
-  { year: 2025, month: 9, day: 24, url: "https://drive.google.com/file/d/145bSVII0wFVvLTcyn-zVTksaiRS9_X0H/view?usp=sharing" },
+  { year: 2025, month: 2, day: 16, url: "" },
+  { year: 2025, month: 2, day: 23, url: "" },
+  { year: 2025, month: 3, day: 16, url: "" },
+  { year: 2025, month: 3, day: 30, url: "" },
+  { year: 2025, month: 4, day: 13, url: "" },
+  { year: 2025, month: 4, day: 26, url: "" },
+  { year: 2025, month: 5, day: 11, url: "" },
+  { year: 2025, month: 5, day: 25, url: "" },
+  { year: 2025, month: 6, day: 8, url: "" },
+  { year: 2025, month: 6, day: 22, url: "" },
+  { year: 2025, month: 7, day: 13, url: "https://drive.google.com/file/d/1C1-F7CLhzkuHCRVjfNHAmo7S3pOBpiSV/view?usp=sharing" },
+  { year: 2025, month: 7, day: 27, url: "https://drive.google.com/file/d/1wwdDhchSxykwxWEnXCNOKLs-INdbdbYR/view?usp=sharing" },
+  { year: 2025, month: 8, day: 10, url: "https://drive.google.com/file/d/1RrqY6CLtKwXqOo85riXoHBPAHq1lB40I/view?usp=sharing" },
+  { year: 2025, month: 8, day: 24, url: "https://drive.google.com/file/d/1M9VZqdpMSJyi1rarpP6yQSlpcynDbK-0/view?usp=sharing" },
+  { year: 2025, month: 9, day: 7,  url: "https://drive.google.com/file/d/17c6YbUNb_4GFRut3C3C1KZWAaZzPSy2o/view?usp=sharing" },
+  { year: 2025, month: 9, day: 24, url: "https://drive.google.com/file/d/1FBjG8mBKgR4Lj4GYYTSqCacD9SOmsxUc/view?usp=sharing" },
 ];
 
 const isExternal = (url) => /^https?:\/\//i.test(url);
