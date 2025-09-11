@@ -56,13 +56,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">1</span>
                   <div>
                     <div className="fw-semibold">Vizcarra Jose A.</div>
-                    <div className="text-muted small">21 oficiales</div>
+                    <div className="text-muted small">24 oficiales - 11 extraoficiales</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">65%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
 
               <li>
@@ -70,13 +70,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">2</span>
                   <div>
                     <div className="fw-semibold">Suarez Hector A.</div>
-                    <div className="text-muted small">12 oficiales</div>
+                    <div className="text-muted small">16 oficiales - 4 extraoficiales</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">58%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
 
               <li>
@@ -84,13 +84,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">3</span>
                   <div>
                     <div className="fw-semibold">Brito Francisco M.</div>
-                    <div className="text-muted small">8 oficiales</div>
+                    <div className="text-muted small">10 oficiales - 1 extraoficial</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">55%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
             </ol>
 
@@ -123,13 +123,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">1</span>
                   <div>
                     <div className="fw-semibold">Assad Cesar A.</div>
-                    <div className="text-muted small">13 oficiales</div>
+                    <div className="text-muted small">14 oficiales - 0 extraoficiales</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">72%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
 
               <li>
@@ -137,13 +137,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">2</span>
                   <div>
                     <div className="fw-semibold">Saez Juan E.</div>
-                    <div className="text-muted small">9 oficiales</div>
+                    <div className="text-muted small">10 oficiales - 1 extraoficial</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">68%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
 
               <li>
@@ -151,13 +151,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">3</span>
                   <div>
                     <div className="fw-semibold">Brito Luis O.</div>
-                    <div className="text-muted small">5 oficiales</div>
+                    <div className="text-muted small">5 oficiales - 3 extraoficiales</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">64%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
             </ol>
 
@@ -190,13 +190,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">1</span>
                   <div>
                     <div className="fw-semibold">Abuela Tete</div>
-                    <div className="text-muted small">8 oficiales</div>
+                    <div className="text-muted small">9 oficiales - 1 extraoficial</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">78%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
 
               <li>
@@ -204,13 +204,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">2</span>
                   <div>
                     <div className="fw-semibold">Monterrico</div>
-                    <div className="text-muted small">5 oficiales</div>
+                    <div className="text-muted small">5 oficiales - 0 extraoficiales</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">74%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
 
               <li>
@@ -218,13 +218,13 @@ export default function EstadisticasInicio() {
                   <span className="rank-badge">3</span>
                   <div>
                     <div className="fw-semibold">Seba y Cami</div>
-                    <div className="text-muted small">4 oficiales</div>
+                    <div className="text-muted small">4 oficiales - 2 extraoficiales</div>
                   </div>
                 </div>
-                <div className="right">
+                {/* <div className="right">
                   <div className="fw-bold text-danger-emphasis">70%</div>
                   <div className="small text-muted">efectividad</div>
-                </div>
+                </div> */}
               </li>
             </ol>
 

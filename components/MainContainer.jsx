@@ -155,8 +155,8 @@ const MainContainer = () => {
               >
                 <div className="cardHipica-content">
                   <span className="cardHipica-date">
-                    <i className="bi bi-card-list"></i> DESDE EL 4 DE FEBRERO,
-                    2024
+                    <i className="bi bi-card-list"></i> DESDE EL 16 DE FEBRERO,
+                    2025
                   </span>
                   <h3>Estadísticas al día</h3>
                 </div>
@@ -169,8 +169,8 @@ const MainContainer = () => {
               >
                 <div className="cardHipica-content">
                   <span className="cardHipica-date">
-                    <i className="bi bi-bar-chart"></i> DOMINGO 5 DE AGOSTO,
-                    2024
+                    <i className="bi bi-bar-chart"></i> DOMINGO 7 DE SEPTIEMBRE,
+                    2025
                   </span>
                   <h3>Resultados por reunión</h3>
                 </div>

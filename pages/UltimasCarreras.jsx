@@ -4,52 +4,62 @@ import "./TablasPages.css";
 
 const UltimasCarreras = () => {
   const videos = [
-    {
-      titulo: '1º Carrera - Premio "Cat Student"',
-      ganador: 'Conectate',
-      src: "https://www.youtube.com/embed/P2B85J6UvjA?si=48nHZb-3bMW7ubU8",
-    },
-    {
-      titulo: '2º Carrera - Premio "Crazy Tordo 2016"',
-      ganador: 'Say Long',
-      src: "https://www.youtube.com/embed/mZxCPJz3OMo?si=XeNuQ11CVOHEVvOb",
-    },
-    {
-      titulo: '3º Carrera - Premio "Don Pamperito"',
-      ganador: 'Hidden Enemy',
-      src: "https://www.youtube.com/embed/XzZK6tffJkc?si=BNIscdF0v_y1a8ta",
-    },
-    {
-      titulo: '4º Carrera - Premio "Grumpy 2018"',
-      ganador: 'Paru Inkas',
-      src: "https://www.youtube.com/embed/wA8Lz-TytUM?si=2DRPK_SwIgcdqitK",
-    },
-    {
-      titulo: '5º Carrera - Premio "Dr. Miguel Critto"',
-      ganador: 'Euro Spring',
-      src: "https://www.youtube.com/embed/-AYMXknuTzk?si=RGOSdclC650R4hIo",
-    },
-    {
-      titulo: '6º Carrera - Premio "Jorge Correa"',
-      ganador: 'Minchito',
-      src: "https://www.youtube.com/embed/qZ8yClNqmoQ?si=Ett4AAb8u2EwnGnR",
-    },
-    {
-      titulo: '7º Carrera - Clásico "82º Aniv. Hipódromo de Tucumán"',
-      ganador: 'El Gran Cabron',
-      src: "https://www.youtube.com/embed/kG7H9-34bic?si=wpjcLQlOdE_S_u_C",
-    },
-    {
-      titulo: '8º Carrera - Premio "Slew Of Valid"',
-      ganador: 'Galore',
-      src: "https://www.youtube.com/embed/sBDce_zQPiw?si=24kJr2i3z_oYLqbq",
-    },
-    {
-      titulo: '9º Carrera - Clásico "Tres Haras"',
-      ganador: 'ER Tintorera',
-      src: "https://www.youtube.com/embed/8OpFpq4RwsY?si=1ehVD0pXdwWkiOmc",
-    },
-  ];
+  { carrera: '1º Carrera', 
+    subtitulo: 'Premio "Día Mundial de la Higiene"', 
+    ganador: 'Lord Lancelot', 
+    src: 'https://www.youtube.com/embed/fCQyNCiMkSU?si=5T0BG2dyga31LcgE'
+  },
+  { carrera: '2º Carrera', 
+    subtitulo: 'Premio "Artilu"', 
+    ganador: 'El Patriarca', 
+    src: 'https://www.youtube.com/embed/jqP0bpHeuqw?si=6KpEfhaPX4aSUrDu' 
+  },
+  { carrera: '3º Carrera', 
+    subtitulo: 'Premio "Tabaiana"', 
+    ganador: 'Caetano', 
+    src: 'https://www.youtube.com/embed/1Dta32XyNHU?si=9z9eQiGsYL19-vBQ' 
+  },
+  { carrera: '4º Carrera', 
+    subtitulo: 'Premio "Taraza"', 
+    ganador: 'Nayla Plus', 
+    src: 'https://www.youtube.com/embed/1-bC3ui2Fro?si=AesRzVDJyGM3Az_h' 
+  },
+  { carrera: '5º Carrera', 
+    subtitulo: 'Concertada', 
+    ganador: 'Tormentoso', 
+    src: 'https://www.youtube.com/embed/NpAl2e6vujA?si=3G9vxbmv6yFWOcSI' 
+  },
+  { carrera: '6º Carrera', 
+    subtitulo: 'Premio "Adolfo Aguilar"', 
+    ganador: 'Low Fool', 
+    src: 'https://www.youtube.com/embed/t5RvXCRjO24?si=K1V2-FqhuEGgL0WK' 
+  },
+  { carrera: '7º Carrera', 
+    subtitulo: 'Premio "Francisco Llanes"', 
+    ganador: 'Jan de Liche', 
+    src: '' 
+  },
+  { carrera: '8º Carrera', 
+    subtitulo: 'Premio "Domingo Faustino Sarmiento"', 
+    ganador: 'Smashing Master', 
+    src: 'https://www.youtube.com/embed/dp3HSWIMcUk?si=h_6JQMf-DHu-SQOf' 
+  },
+  { carrera: '9º Carrera', 
+    subtitulo: 'Premio "Día del Inmigrante"', 
+    ganador: 'Smiling Nich', 
+    src: 'https://www.youtube.com/embed/b4rIQN0J9RI?si=6hLK27mdrAkJXQVp' 
+  },
+  { carrera: '10º Carrera', 
+    subtitulo: 'Especial "Oscar N. Bravo"', 
+    ganador: 'Twitch Hurricane', 
+    src: 'https://www.youtube.com/embed/-57rr4UPQys?si=2r4RcQRgd4rLMCrH' 
+  },
+  { carrera: '11º Carrera', 
+    subtitulo: 'Premio "Día del Maestro"', 
+    ganador: 'Lord of Moyvore', 
+    src: 'https://www.youtube.com/embed/uDMN0JSfsEY?si=azBTiGBNjid2J2vw' 
+  },
+];
 
   return (
     <>
@@ -89,33 +99,35 @@ const UltimasCarreras = () => {
 
         <div className="separador-pages"></div>
 
-        <div className="container-fluid mt-4 container-fluid-videos">
-          <div className="row">
-            {videos.map((video, index) => (
-              <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
-                <div className="card">
-                  <div className="card-body">
-                    <h5 className="card-title" dangerouslySetInnerHTML={{ __html: video.titulo }} />
-                    <p className="card-text">
-                      <i className="bi bi-award-fill medalla-oro"></i> {video.ganador}
-                    </p>
-                  </div>
-                  <div className="ratio ratio-16x9">
-                    <iframe
-                      className="iframe-video"
-                      src={video.src}
-                      title={`Video ${index + 1}`}
-                      frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerPolicy="strict-origin-when-cross-origin"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-            ))}
+<div className="container-fluid mt-4 container-fluid-videos">
+  <div className="row">
+    {videos.map((video, index) => (
+      <div className="col-12 col-md-6 col-lg-4 mb-4" key={index}>
+        <div className="card">
+          <div className="card-body">
+            <h5 className="card-title">
+              {video.carrera} <br /> {video.subtitulo}
+            </h5>
+            <p className="card-text">
+              <i className="bi bi-award-fill medalla-oro"></i> {video.ganador}
+            </p>
+          </div>
+          <div className="ratio ratio-16x9">
+            <iframe
+              className="iframe-video"
+              src={video.src}
+              title={`Video ${index + 1}`}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
+      </div>
+    ))}
+  </div>
+</div>
       </main>
     </>
   );

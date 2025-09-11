@@ -2,34 +2,34 @@
   import "./Noticias.css";
 
   // 👇 Import de imágenes desde src/assets
-  import noticia1 from "../src/assets/Clasico.jpg";
-  import noticia2 from "../src/assets/Potrillo.JPG";
-  import noticia3 from "../src/assets/Cashisking.JPG";
+  import noticia1 from "../src/assets/noticia-1.jpg";
+  import noticia2 from "../src/assets/noticia-2.JPG";
+  import noticia3 from "../src/assets/noticia-3.JPG";
 
   const noticias = [
 {
   id: 1,
-  titulo: 'Standartd brilló en el Clásico 83º Aniversario del Hipódromo de Tucumán',
-  texto: `Con José A. Vizcarra en las riendas, el pupilo del stud Piedra Grande ganó con autoridad el Clásico "83º Aniversario", sobre 1.600 metros. El zaino de 6 años, entrenado por C.A. Assad, superó por 2 1/2 cuerpos a Golden Warrior.`,
+  titulo: 'Twitch Hurricane se llevó el Especial "Oscar N. Bravo"',
+  texto: `Con Héctor A. Suárez en la monta, el pupilo del stud Don Valiente se quedó con el Especial "Oscar N. Bravo", sobre 1.400 metros. El zaino de 6 años, preparado por C.A. Assad, superó por 1 cuerpo a Golden Warrior.`,
   imagen: noticia1,
-  fecha: "10Ago25",
-  video: "youtube.com",
+  fecha: "07Sep25",
+  video: "https://www.youtube.com/watch?v=-57rr4UPQys"
 },
-  {
+{
   id: 2,
-  titulo: 'Lucky Sant se quedó con el Premio Juan Santos Leguizamón',
-  texto: `En la prueba para potrillos de 3 años, Lucky Sant, del stud Rubio's y con José A. Vizcarra, ganó con solvencia el Premio "Juan Santos Leguizamón". El pupilo de D.S. Ramos marcó 45" 3/5 y superó por 1/2 pescuezo a Curioso Honey. Tercero quedó Miel Escondida a 1 cuerpo. El zaino, hijo de Winning Prize, suma ahora 1 triunfo extraoficial en 3 salidas.`,
+  titulo: 'El Patriarca debutó con triunfo en el Premio "Artilu"',
+  texto: `Con José A. Vizcarra en la conducción, el potrillo del stud Seba y Cami tuvo un estreno soñado al ganar el Premio "Artilu", sobre 800 metros. El hijo de El Moisés, entrenado por L.O. Brito, se impuso con 3 1/2 cuerpos de ventaja sobre El Barba Roja.`,
   imagen: noticia2,
-  fecha: "10Ago25",
-  video: "youtube.com",
+  fecha: "07Sep25",
+  video: "https://www.youtube.com/watch?v=jqP0bpHeuqw"
 },
 {
   id: 3,
-  titulo: 'Cashisking dio el batacazo en el Premio "Dr. Miguel Critto"',
-  texto: `En una sorpresiva actuación, Cashisking, del stud "El Pony Leguizamón" y con Francisco M. Brito en la silla, se impuso en el Premio "Dr. Miguel Critto" con un dividendo de $57,90. El hijo de Forge superó por 1 cuerpo a Grand Silvi y relegó a Piu Rimout al tercer lugar, dejando apuestas vacantes. Fue su segundo triunfo en 12 presentaciones en Tucumán.`,
+  titulo: 'Lord of Moyvore cerró la jornada en el Premio "Día del Maestro"',
+  texto: `Con Facundo R. Morán en las riendas, el pupilo del stud 5 De Copas se quedó con la 11ª y última carrera, el Premio "Día del Maestro", sobre 1.300 metros. El zaino de 6 años, entrenado por S.D. Cuellar, superó por 3 cuerpos a Vikins Terror.`,
   imagen: noticia3,
-  fecha: "10Ago25",
-  video: "youtube.com"
+  fecha: "07Sep25",
+  video: "https://www.youtube.com/watch?v=uDMN0JSfsEY"
 },
   ];
 

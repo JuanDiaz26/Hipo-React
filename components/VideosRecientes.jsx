@@ -21,13 +21,13 @@ const VideosRecientes = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">10º Carrera - Clásico "83º<br />Aniv. Hipódromo de Tucumán"</h5>
+                <h5 className="card-title">9º Carrera <br /> Premio "Dia Del Inmigrante"</h5>
                 <p className="card-text">
-                  <i className="bi bi-award-fill medalla-oro"></i> Standartd
+                  <i className="bi bi-award-fill medalla-oro"></i> Smiling Nich
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/C2JBFKN1lcg?si=bEQwmsd5L3avGOT1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="873" height="492" src="https://www.youtube.com/embed/b4rIQN0J9RI" title="9º Carrera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -36,15 +36,13 @@ const VideosRecientes = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">11º Carrera - Premio<br /> "Dr. Miguel Critto"</h5>
+                <h5 className="card-title">10º Carrera <br />Especial "Oscar N. Bravo"</h5>
                 <p className="card-text">
-                  <i className="bi bi-award-fill medalla-oro"></i> Cashisking
+                  <i className="bi bi-award-fill medalla-oro"></i> Twitch Hurricane
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-                <iframe className="iframe-video" src="https://www.youtube.com/embed/sBDce_zQPiw?si=qeUWw7A_Hyl3PFrK"
-                  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                <iframe width="873" height="492" src="https://www.youtube.com/embed/-57rr4UPQys" title="10º Carrera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
@@ -53,15 +51,13 @@ const VideosRecientes = () => {
           <div className="col-12 col-md-6 col-lg-4 mb-4">
             <div className="card">
               <div className="card-body">
-                <h5 className="card-title">6º Carrera - Premio <br /> "Juan Santos Leguizamon"</h5>
+                <h5 className="card-title">11º Carrera <br /> Premio "Dia Del Maestro"</h5>
                 <p className="card-text">
-                  <i className="bi bi-award-fill medalla-oro"></i> Lucky Sant
+                  <i className="bi bi-award-fill medalla-oro"></i> Lord Of Moyvore
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-                <iframe className="iframe-video" src="https://www.youtube.com/embed/8OpFpq4RwsY?si=eJtarnQuprwoXRaJ"
-                  title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+              <iframe width="873" height="492" src="https://www.youtube.com/embed/uDMN0JSfsEY" title="11º Carrera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
