@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "./TablasPages.css";
 
+// Importación de imágenes (3 en total)
+import escuela1 from "../src/assets/escuela-1.jpeg";
+import escuela2 from "../src/assets/escuela-2.jpeg";
+import escuela3 from "../src/assets/escuela-3.jpg";
+
 const Escuela = () => {
   return (
     <>
@@ -42,15 +47,16 @@ const Escuela = () => {
         <div className="separador-pages"></div>
 
         <div className="contenedorHistoria">
+          {/* SECCIÓN 1 */}
           <div className="historia">
             <figure>
               <img
-                src="..src/assets/hipo-museo.png"
-                alt="imagen de la escuela de jockeys"
+                src={escuela1}
+                alt="Imagen de la Escuela de Jockeys"
                 loading="lazy"
               />
               <figcaption>
-                El Museo del Turf es una parte integral del Hipódromo de Tucumán.
+                Formación integral en la Escuela de Jockeys de Tucumán.
               </figcaption>
             </figure>
             <p>
@@ -64,6 +70,7 @@ const Escuela = () => {
             </p>
           </div>
 
+          {/* SECCIÓN 2 */}
           <div className="historia">
             <p>
               La escuela no solo enseña las habilidades necesarias para competir
@@ -76,25 +83,26 @@ const Escuela = () => {
             </p>
             <figure>
               <img
-                src="..src/assets/hipo-museo.png"
-                alt="imagen de la escuela de jockeys"
+                src={escuela2}
+                alt="Entrenamiento en la Escuela de Jockeys"
                 loading="lazy"
               />
               <figcaption>
-                El Museo del Turf es una parte integral del Hipódromo de Tucumán.
+                Entrenamiento de los chicos en la escuela.
               </figcaption>
             </figure>
           </div>
 
+          {/* SECCIÓN 3 */}
           <div className="historia">
             <figure>
               <img
-                src="..src/assets/hipo-museo.png"
-                alt="imagen de la escuela de jockeys"
+                src={escuela3}
+                alt="Eventos de la Escuela de Jockeys"
                 loading="lazy"
               />
               <figcaption>
-                El Museo del Turf es una parte integral del Hipódromo de Tucumán.
+                Estudiantes ya participando en el vareo del dia a dia.
               </figcaption>
             </figure>
             <p>
@@ -107,6 +115,7 @@ const Escuela = () => {
             </p>
           </div>
 
+          {/* CONTACTOS */}
           <div className="container-telefonos">
             <div className="container-titulos">
               <i className="bi bi-telephone"></i>
@@ -114,7 +123,7 @@ const Escuela = () => {
                 <span className="titulo-sectores">Prof. Rivera Alejandro</span>
                 <br />
                 <span className="descripcion-sectores">
-                  <a href="tel:+1234567890">Llamar al +1234567890</a>
+                  <a href="tel:+1234567890">Llamar al +3815235087</a>
                 </span>
               </div>
             </div>
@@ -125,18 +134,7 @@ const Escuela = () => {
                 <span className="titulo-sectores">Prof. Jorge Gine</span>
                 <br />
                 <span className="descripcion-sectores">
-                  <a href="tel:+1234567890">Llamar al +1234567890</a>
-                </span>
-              </div>
-            </div>
-
-            <div className="container-titulos">
-              <i className="bi bi-telephone"></i>
-              <div>
-                <span className="titulo-sectores">Preceptor Jose Gerez</span>
-                <br />
-                <span className="descripcion-sectores">
-                  <a href="tel:+1234567890">Llamar al +1234567890</a>
+                  <a href="tel:+1234567890">Llamar al +3813326590</a>
                 </span>
               </div>
             </div>

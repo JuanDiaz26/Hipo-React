@@ -263,87 +263,118 @@ th {
 
 /******* FIN VIDEOS *******/
 
-/* ========== AGENCIAS ========== */
+/***** ========== AGENCIAS (NUEVO) ========== *****/
 
-.container-mapa {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+/* Card contenedora del bloque */
+.map-card{
+  width: min(100%, 1000px);
+  margin-inline: auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.08);
+  overflow: hidden;
+  display: grid;
+  gap: 12px;
+  padding: 14px;
 }
 
-.descripcion-mapa {
+/* Encabezado */
+.map-header{
+  text-align: center;
+}
+
+/* Texto bajo el título (ya lo tenías) */
+.descripcion-mapa{
   font-family: var(--parrafos);
-  font-size: 15px;
+  font-size: 0.95rem;      /* antes 15px */
   text-align: center;
   color: #e0331e;
+  margin: 2px 0 0;
 }
 
-.iconos-mapa {
-  padding: 15px 0;
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+/* Mapa responsivo (sustituye a .mapa-iframe y .container-mapa) */
+.map-wrapper{
+  width: 100%;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.map-embed{
+  width: 100%;
+  aspect-ratio: 16 / 9;   /* alto automático: mobile-first */
+  border: 0;
+  display: block;
+}
+
+/* Leyenda (sustituye a .iconos-mapa y .img-caballo*) */
+.legend-grid{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 10px;
 }
-
-.img-caballo {
+.legend-item{
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
 }
-
-.img-caballo strong {
-  margin-left: 5px;
+.legend-item strong{
+  margin-left: 0;
   font-family: var(--parrafos);
   color: rgb(139, 134, 134);
+  font-weight: 600;
 }
 
-.img-caballo .img-ubicacion {
-  background-color: rgba(207, 203, 203, 0.351);
+/* Iconos */
+.legend-icon{
   padding: 6px;
   border-radius: 50%;
-  width: 37px;
+  width: 36px;
+}
+.legend-ubicacion{ background-color: rgba(207, 203, 203, 0.35); }
+.legend-congreso{  background-color: rgb(194, 24, 91); }
+.legend-mitre{     background-color: rgb(2, 136, 209); }
+
+/* Acciones inferiores (botones) */
+.map-actions{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 2px;
+}
+.btn-map{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform .08s ease, opacity .2s ease;
+}
+.btn-map:hover{ transform: translateY(-1px); opacity: .95; }
+.btn-map.btn-outline{
+  background: transparent;
+  color: #111;
+  border: 1px solid #e3e3e3;
 }
 
-.img-caballo .img-congreso {
-  background-color: rgb(194, 24, 91);
-  padding: 6px;
-  border-radius: 50%;
-  width: 35px;
+/* Breakpoints */
+@media (min-width: 576px){
+  .legend-grid{ grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 768px){
+  .map-card{ padding: 18px; gap: 14px; }
+  .legend-grid{ grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 992px){
+  .map-embed{ aspect-ratio: 21 / 9; } /* más panorámico en desktop */
 }
 
-.img-caballo .img-mitre {
-  background-color: rgb(2, 136, 209);
-  padding: 6px;
-  border-radius: 50%;
-  width: 35px;
-}
+/***** FIN AGENCIAS (NUEVO) *****/
 
-@media (min-width: 768px) {
-  .container-mapa {
-    width: 90%;
-    margin: auto;
-    gap: 20px;
-  }
-
-  .iconos-mapa {
-    flex-direction: row;
-    gap: 30px;
-    width: 100%;
-  }
-
-  .mapa-iframe {
-    width: 50%;
-  }
-}
-
-/******* FIN AGENCIAS *******/
 
 
 /* ========== CÓMO APOSTAR ========== */
@@ -714,6 +745,21 @@ figcaption {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+/* 🔹 Ajuste de imágenes */
+.premioBatalla figure img {
+  max-width: 90%;   /* que no pasen del ancho del contenedor */
+  height: auto;     /* mantiene la proporción */
+  border-radius: 8px; /* opcional: esquinas suaves */
+  margin: 0 auto;   /* centra las imágenes */
+}
+
+/* 🔹 Opcional: achicar aún más en pantallas grandes */
+@media (min-width: 992px) {
+  .premioBatalla figure img {
+    max-width: 70%;
+  }
 }
 
 /******* FIN PAGINA CARRERAS DESTACADAS *******/

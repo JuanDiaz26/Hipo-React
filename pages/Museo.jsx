@@ -2,6 +2,11 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "./TablasPages.css";
 
+// Importación de imágenes (3 en total)
+import museoGeneral from "../src/assets/museo-cartel.jpg";
+import museoLoroLopez from "../src/assets/loro-lopez.jpg";
+import bibliotecaLitoBestani from "../src/assets/museo-dentro.jpg";
+
 const Museo = () => {
   return (
     <>
@@ -45,10 +50,13 @@ const Museo = () => {
           <div className="premioBatalla">
             <div className="historia">
               <figure>
-                <img src="..src/assets/hipo-gran-premio.png" alt="Museo del Turf" loading="lazy" />
+                <img
+                  src={museoGeneral}
+                  alt="Museo del Turf"
+                  loading="lazy"
+                />
                 <figcaption>
-                  El Museo del Turf es una parte integral del Hipódromo de
-                  Tucumán.
+                  El Museo del Turf es una parte integral del Hipódromo de Tucumán.
                 </figcaption>
               </figure>
               <p>
@@ -97,10 +105,13 @@ const Museo = () => {
                 reconocida que el museo lleva su nombre.
               </p>
               <figure>
-                <img src="..src/assets/hipo-gran-premio.png" alt="Museo Luis Loro López" loading="lazy" />
+                <img
+                  src={museoLoroLopez}
+                  alt="Museo Luis Loro López"
+                  loading="lazy"
+                />
                 <figcaption>
-                  El Museo del Turf es una parte integral del Hipódromo de
-                  Tucumán.
+                  Homenaje a Luis "Loro" López, leyenda del turf tucumano.
                 </figcaption>
               </figure>
             </div>
@@ -129,10 +140,13 @@ const Museo = () => {
             <div className="separador-pages"></div>
             <div className="historia">
               <figure>
-                <img src="..src/assets/hipo-gran-premio.png" alt="Biblioteca Lito Bestani" loading="lazy" />
+                <img
+                  src={bibliotecaLitoBestani}
+                  alt="Biblioteca Lito Bestani"
+                  loading="lazy"
+                />
                 <figcaption>
-                  El Museo del Turf es una parte integral del Hipódromo de
-                  Tucumán.
+                  Biblioteca con material histórico del turf latinoamericano.
                 </figcaption>
               </figure>
               <p>

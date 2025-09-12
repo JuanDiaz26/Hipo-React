@@ -2,6 +2,14 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import "./TablasPages.css";
 
+// Importación de imágenes (6 en total)
+import hipoGranPremio from "../src/assets/batalla-trofeos.jpg";
+import cajaPopular from "../src/assets/caja-carrera.jpg";
+import carreraEstrellas from "../src/assets/estrellas-1.jpg";
+import estrellasTucumanas from "../src/assets/estrella-tucu.jpg";
+import clasicoPellegrini from "../src/assets/pellegrini-2024.jpg";
+import clasicoAniversario from "../src/assets/aniv-hipo.jpg";
+
 const CarrerasDestacadas = () => {
   return (
     <>
@@ -45,12 +53,12 @@ const CarrerasDestacadas = () => {
           {/* Gran Premio Batalla de Tucumán */}
           <div className="premioBatalla">
             <strong className="titulos-descargar-call center">
-              Gran Premio Batalla de Tucumán
+              Gran Premio "Batalla de Tucumán"
             </strong>
             <div className="historia">
               <figure>
                 <img
-                  src="..src/assets/hipo-gran-premio.png"
+                  src={hipoGranPremio}
                   alt="imagen del Gran Premio Batalla de Tucumán"
                   loading="lazy"
                 />
@@ -74,7 +82,7 @@ const CarrerasDestacadas = () => {
           {/* Clásico Caja Popular de Ahorros */}
           <div className="premioBatalla">
             <strong className="titulos-descargar-call center">
-              Clásico Caja Popular de Ahorros
+              Clásico "Caja Popular de Ahorros de Tucumán"
             </strong>
             <div className="historia">
               <p>
@@ -85,20 +93,16 @@ const CarrerasDestacadas = () => {
                 </strong>
                 . Este evento se ha convertido en una{" "}
                 <strong>tradición significativa</strong> dentro del calendario
-                hípico regional. La institución se fundó bajo el mandato del{" "}
-                <strong>gobernador de Tucumán, Ernesto Padilla</strong>, el{" "}
-                <strong>13 de julio de 1915</strong> en respuesta a la crisis
-                económica mundial provocada por la Primera Guerra Mundial con el
-                objetivo de <strong>proteger los ahorros de la población</strong>.
+                hípico regional.
               </p>
               <figure>
                 <img
-                  src="..src/assets/cajapopular.jpeg"
+                  src={cajaPopular}
                   alt="imagen caja popular de ahorros"
                   loading="lazy"
                 />
                 <figcaption>
-                  Fachada histórica de la Caja Popular de Ahorros de Tucumán.
+                  Clasico 110º Aniv. Caja Popular de Ahorros de Tucumán.
                 </figcaption>
               </figure>
             </div>
@@ -107,32 +111,24 @@ const CarrerasDestacadas = () => {
           {/* Carrera de las Estrellas */}
           <div className="premioBatalla">
             <strong className="titulos-descargar-call center">
-              Carrera de las Estrellas
+              Clasico "Carrera de las Estrellas"
             </strong>
             <div className="historia">
               <figure>
                 <img
-                  src="..src/assets/hipo-gran-premio.png"
+                  src={carreraEstrellas}
                   alt="imagen carrera de las estrellas"
                   loading="lazy"
                 />
                 <figcaption>
-                  La disputa del Gran Premio Batalla de Tucumán atrae a más de
-                  20,000 espectadores todos los 24 de septiembre.
+                  Carrera para potrillos inscriptos en la Fundación Equina Argentina.
                 </figcaption>
               </figure>
               <p>
                 Las <strong>Carreras de las Estrellas</strong>, iniciadas en
                 Argentina en 1991 e inspiradas por la{" "}
                 <strong>Breeders' Cup</strong> de Estados Unidos, son uno de los
-                eventos hípicos más importantes del país. Organizadas por la{" "}
-                <strong>Fundación Equina Argentina (FEAR)</strong>, reúnen a los
-                mejores caballos en diversas categorías. En{" "}
-                <strong>Tucumán</strong>, estas carreras replican el formato y
-                prestigio de Buenos Aires, ofreciendo a los{" "}
-                <strong>caballos de 3 años</strong> y a los propietarios del
-                norte la oportunidad de competir en un evento de alto nivel sin
-                tener que desplazarse a la capital.
+                eventos hípicos más importantes del país.
               </p>
             </div>
           </div>
@@ -140,70 +136,75 @@ const CarrerasDestacadas = () => {
           {/* Estrellas Tucumanas */}
           <div className="premioBatalla">
             <strong className="titulos-descargar-call center">
-              Estrellas Tucumanas
+              Clasico "Estrellas Tucumanas"
             </strong>
             <div className="historia">
               <p>
                 Las Carreras de las Estrellas Tucumanas son un evento hípico
                 inspirado en las tradicionales{" "}
                 <strong>Carreras de las Estrellas</strong> que se celebran en{" "}
-                <strong>Buenos Aires</strong>. Estas carreras tienen como
-                objetivo destacar a los{" "}
-                <strong>caballos de 4 años y más edad</strong> que están inscriptos en el{" "}
-                <strong>programa de las Estrellas</strong>, asegurando una
-                competencia de <strong>alto nivel</strong> y{" "}
-                <strong>calidad</strong>.
+                <strong>Buenos Aires</strong> para spc 4 años y más edad inscriptos.
               </p>
               <figure>
                 <img
-                  src="..src/assets/hipo-gran-premio.png"
-                  alt="imagen carrera de las estrellas"
+                  src={estrellasTucumanas}
+                  alt="imagen estrellas tucumanas"
                   loading="lazy"
                 />
                 <figcaption>
-                  La disputa del Gran Premio Batalla de Tucumán atrae a más de
-                  20,000 espectadores todos los 24 de septiembre.
+                  Las Estrellas Tucumanas reúnen a los mejores caballos del norte.
                 </figcaption>
               </figure>
+            </div>
+          </div>
+
+          {/* Clásico Aniversario del Hipódromo de Tucumán */}
+          <div className="premioBatalla">
+            <strong className="titulos-descargar-call center">
+              Clásico "Aniv. Hipódromo de Tucumán"
+            </strong>
+            <div className="historia">
+              <figure>
+                <img
+                  src={clasicoAniversario}
+                  alt="imagen clásico aniversario hipódromo de Tucumán"
+                  loading="lazy"
+                />
+                <figcaption>
+                  Facundo Moran en la entrega del 110º Aniv. Hipodrómo de Tucumán.
+                </figcaption>
+              </figure>
+              <p>
+                El <strong>Clásico Aniversario del Hipódromo de Tucumán</strong>{" "}
+                celebra la fundación del circo hípico (2 de agosto de 1942). Es
+                un evento emblemático que reúne a la comunidad turfística y
+                destaca la importancia histórica y cultural del hipódromo en la
+                región.
+              </p>
             </div>
           </div>
 
           {/* Clásico Carlos Pellegrini */}
           <div className="premioBatalla">
             <strong className="titulos-descargar-call center">
-              Clásico Carlos Pellegrini
+              Clásico "Carlos Pellegrini"
             </strong>
             <div className="historia">
               <p>
                 El <strong>Clásico Carlos Pellegrini</strong>, celebrado
-                anualmente en el <strong>Hipódromo de San Isidro</strong> en{" "}
-                <strong>Buenos Aires, Argentina</strong>, es una prestigiosa
-                carrera de turf en honor a <strong>Carlos Pellegrini</strong>,
-                expresidente argentino y amante del deporte ecuestre. Esta
-                competencia destaca por atraer a los mejores caballos de
-                Argentina y Sudamérica, cubriendo una distancia de{" "}
-                <strong>2400 metros</strong>.
+                anualmente en el <strong>Hipódromo de San Isidro</strong>, es una
+                de las competencias más prestigiosas del turf argentino.
               </p>
               <figure>
                 <img
-                  src="..src/assets/hipo-gran-premio.png"
-                  alt="imagen clasico carlos pellegrini"
+                  src={clasicoPellegrini}
+                  alt="imagen clásico carlos pellegrini"
                   loading="lazy"
                 />
                 <figcaption>
-                  La disputa del Gran Premio Batalla de Tucumán atrae a más de
-                  20,000 espectadores todos los 24 de septiembre.
+                  He's a Rockstar se llevó el Clasico Pellegrini en la ultima reunión.
                 </figcaption>
               </figure>
-              <p>
-                En <strong>Tucumán</strong> se realiza un evento también
-                conocido como <strong>Clásico Carlos Pellegrini</strong>, aunque
-                con premios y categorías inferiores comparado con su homólogo en
-                la capital. Este evento es significativo para la región norteña
-                al proporcionar una plataforma para que los propietarios y
-                criadores locales compitan a alto nivel sin necesidad de viajar
-                largas distancias.
-              </p>
             </div>
           </div>
         </div>
