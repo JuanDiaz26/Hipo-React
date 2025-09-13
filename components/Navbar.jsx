@@ -5,23 +5,19 @@ import "./Navbar.css";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Offcanvas } from "bootstrap";
 
-import logoBlanco from "../src/assets/logohipoblanco.png";
-import logoColor  from "../src/assets/logohipocolor.png";
-
 export default function Navbar() {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const path = pathname.toLowerCase();
 
   // --- Offcanvas control ---
-  const OFFCANVAS_ID = "offcanvasNav"; // id único
+  const OFFCANVAS_ID = "offcanvasNav";
   const closeOffcanvas = () => {
     const el = document.getElementById(OFFCANVAS_ID);
     if (el) Offcanvas.getOrCreateInstance(el).hide();
   };
   const go = (to) => {
     navigate(to);
-    // cerrar después de navegar (tiny timeout por animación)
     setTimeout(closeOffcanvas, 0);
   };
 
@@ -50,7 +46,7 @@ export default function Navbar() {
           >
             <img
               className={`logo-hipo-inicio ${isInicio ? "d-md-none" : ""}`}
-              src={isInicio ? logoBlanco : logoColor}
+              src={isInicio ? "/logohipoblanco.png" : "/logohipocolor.png"}
               alt="Logo HipodromodeTucuman"
               loading="lazy"
             />

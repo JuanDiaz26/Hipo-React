@@ -3,11 +3,6 @@ import { Link } from "react-router-dom";
 import Calendar from "./Calendar";
 import "./MainContainer.css";
 
-// 👇 Import de la imagen desde src/assets
-import carouselImg from "../src/assets/carousel-ricardo.png";
-import carouselImg2 from "../src/assets/carousel-placa2.png";
-import carouselImg3 from "../src/assets/carousel-placa3.png";
-
 const MainContainer = () => {
   return (
     <main className="main-inicio">
@@ -57,7 +52,7 @@ const MainContainer = () => {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    src={carouselImg}
+                    src="/carousel-ricardo.png"
                     className="d-block w-100"
                     alt="Placa de carousel"
                     loading="lazy"
@@ -65,7 +60,7 @@ const MainContainer = () => {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={carouselImg2}
+                    src="/carousel-placa2.png"
                     className="d-block w-100"
                     alt="Placa de carousel"
                     loading="lazy"
@@ -73,7 +68,7 @@ const MainContainer = () => {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src={carouselImg3}
+                    src="/carousel-placa3.png"
                     className="d-block w-100"
                     alt="Placa de carousel"
                     loading="lazy"
