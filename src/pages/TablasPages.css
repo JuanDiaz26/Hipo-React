@@ -107,6 +107,7 @@ th, td {
   border: none;
   text-align: center;
   padding: 12px;
+  font-weight: bold;
 }
 
 th {

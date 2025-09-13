@@ -88,7 +88,7 @@ const Cartas = () => {
             <tbody>
               {cartas.map((carta, i) => (
                 <tr key={i}>
-                  <td>{carta.titulo}</td>
+                  <td>{carta.titulo.toUpperCase()}</td>
                   <td>
                     <a href={carta.link} target="_blank" rel="noopener noreferrer">
                       <i className="bi bi-file-pdf-fill logo-pdf" title="Descargar Carta de Llamada"></i>

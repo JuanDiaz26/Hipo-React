@@ -5,38 +5,22 @@ import "./TablasPages.css";
 
 const Inscripcion = () => {
   const inscripciones = [
-    {
-      nombre: "Reunión nº 13 - 4 de Agosto",
-      link: "https://drive.google.com/file/d/1g-dLrQVSRBj8ud08wDa4SjdldBxHyW2Q/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 12 - 21 de Julio",
-      link: "https://drive.google.com/file/d/1JONGYDusgGqsd4NE-RC7MKifRcp0FexS/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 11 - 7 de Julio",
-      link: "https://drive.google.com/file/d/10KMhxVgH1sefwk4gYoulpMYtne4e1Uvq/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 10 - 23 de Junio",
-      link: "https://drive.google.com/file/d/1O0JDkcuqynBgJnRKNrc8tR-BgIe9325_/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 9 - 2 de Junio",
-      link: "https://drive.google.com/file/d/1atGKvUjIpuP_IpsncGMtsmOYV__P3zF0/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 8 - 19 de Mayo",
-      link: "https://drive.google.com/file/d/1jnAeZh0hzvIchSA0cIvrV3FIzRL0yo9_/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 7 - 5 de Mayo",
-      link: "https://drive.google.com/file/d/1LgT8E2zeGOfUM8vs_rm_n_oR5p8Klmqi/view?usp=sharing",
-    },
-    {
-      nombre: "Reunión nº 6 - 21 de Abril",
-      link: "https://drive.google.com/file/d/1hrjK_SvhbTnxdEfY8k6_s5rgwANbiDJO/view?usp=sharing",
-    },
+  { nombre: "Reunión nº 16 - 24 de Septiembre", link: "https://drive.google.com/file/d/1L66XoVMZNm-LtU9_InkvwR63lfLBzLWd/view?usp=sharing" },
+  { nombre: "Reunión nº 15 - 7 de Septiembre", link: "https://drive.google.com/file/d/1g_Oz7bwhHD2wDjD2cXE_90ugLsGnYii3/view?usp=sharing" },
+  { nombre: "Reunión nº 14 - 24 de Agosto", link: "https://drive.google.com/file/d/1LxDxTRWLQyAJaef7VMMa4zR1KP-uR4FH/view?usp=sharing" },
+  { nombre: "Reunión nº 13 - 10 de Agosto", link: "https://drive.google.com/file/d/12HO8GMd2XrenJrUm9l6AV2Qy6oKiff3-/view?usp=sharing" },
+  { nombre: "Reunión nº 12 - 27 de Julio", link: "https://drive.google.com/file/d/1KJhii_G5L0ZnXo3iZFaabDYSFSPie7Zn/view?usp=sharing" },
+  { nombre: "Reunión nº 11 - 13 de Julio", link: "https://drive.google.com/file/d/1sz9x1RiDc4i0xgNWWjPUGT1wVAt2cna0/view?usp=sharing" },
+  { nombre: "Reunión nº 9 - 22 de Junio",  link: "https://drive.google.com/file/d/1OYjiHlmF8BtT0Gl_ZsjY80TPxI0x_DbX/view?usp=sharing" },
+  { nombre: "Reunión nº 10 - 8 de Junio", link: "https://drive.google.com/file/d/1vuc4o0UsRZfKCYdJa1pdpg7eddUh4QMR/view?usp=sharing" },
+  { nombre: "Reunión nº 8 - 25 de Mayo",  link: "https://drive.google.com/file/d/1TgxPIfcz7ih8GpWtKW1OM8mkHaQo6QuT/view?usp=sharing" },
+  { nombre: "Reunión nº 7 - 11 de Mayo",  link: "https://drive.google.com/file/d/1_iQ5vdYheNFMNX2btDrlih5cCwodH1EP/view?usp=sharing" },
+  { nombre: "Reunión nº 6 - 26 de Abril",  link: "https://drive.google.com/file/d/1RxC0RpPGPitQbXCrEAv2P10RZiccWaYJ/view?usp=sharing" },
+  { nombre: "Reunión nº 5 - 13 de Abril",  link: "https://drive.google.com/file/d/1gvxSkjJGJHaz6fjRKt4405x84zOZwRXW/view?usp=sharing" },
+  { nombre: "Reunión nº 4 - 30 de Marzo",  link: "https://drive.google.com/file/d/15xH-UKNnYcRRs_S3GDTnDaqNPNSCx3ch/view?usp=sharing" },
+  { nombre: "Reunión nº 3 - 16 de Marzo",  link: "https://drive.google.com/file/d/1XBtvHWvLai35hcHJZ6S1DpFdTg3gvKzI/view?usp=sharing" },
+  { nombre: "Reunión nº 2 - 23 de Febrero", link: "https://drive.google.com/file/d/1o6CbvQn-bIpMVwG3LNVxcTQsYfqLifIf/view?usp=sharing" },
+  { nombre: "Reunión nº 1 - 16 de Febrero", link: "https://drive.google.com/file/d/1-lTss8ZrOkJOVs7lyBTm4sdnBXCznYo7/view?usp=sharing" },
   ];
 
   return (
@@ -75,7 +59,7 @@ const Inscripcion = () => {
             <tbody>
               {inscripciones.map((item, index) => (
                 <tr key={index}>
-                  <td>{item.nombre}</td>
+                  <td>{item.nombre.toUpperCase()}</td>
                   <td>
                     <a
                       href={item.link}

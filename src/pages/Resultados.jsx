@@ -65,7 +65,7 @@ const Resultados = () => {
             <tbody>
               {resultados.map((resultado, index) => (
                 <tr key={index}>
-                  <td>{resultado.nombre}</td>
+                  <td>{resultado.nombre.toUpperCase()}</td>
                   <td>
                     <a href={resultado.link} target="_blank" rel="noopener noreferrer">
                       <i className="bi bi-file-pdf-fill logo-pdf" title="Descargar Resultado Oficial"></i>
