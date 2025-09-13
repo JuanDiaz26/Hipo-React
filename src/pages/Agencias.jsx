@@ -2,6 +2,10 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
+// ✅ Importá las imágenes desde src/assets
+import ubicacionColor from "../assets/ubicacion-color.png";
+import caballoBlanco from "../assets/caballo-blanco.png";
+
 const Agencias = () => {
   return (
     <>
@@ -30,10 +34,7 @@ const Agencias = () => {
               className="bi bi-record-fill punto-color-titulo"
               viewBox="0 0 20 20"
             >
-              <path
-                fillRule="evenodd"
-                d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10"
-              />
+              <path fillRule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10" />
             </svg>{" "}
             Agencias
           </h3>
@@ -64,7 +65,7 @@ const Agencias = () => {
               <div className="legend-item">
                 <img
                   className="legend-icon legend-ubicacion"
-                  src="./src/assets/ubicacion-color.png"
+                  src={ubicacionColor}
                   alt="Hipódromo de Tucumán"
                   loading="lazy"
                 />
@@ -74,7 +75,7 @@ const Agencias = () => {
               <div className="legend-item">
                 <img
                   className="legend-icon legend-congreso"
-                  src="./src/assets/caballo-blanco.png"
+                  src={caballoBlanco}
                   alt="Agencia sucursal Congreso"
                   loading="lazy"
                 />
@@ -84,7 +85,7 @@ const Agencias = () => {
               <div className="legend-item">
                 <img
                   className="legend-icon legend-mitre"
-                  src="./src/assets/caballo-blanco.png"
+                  src={caballoBlanco}
                   alt="Agencia sucursal Mitre"
                   loading="lazy"
                 />

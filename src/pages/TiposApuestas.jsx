@@ -2,14 +2,26 @@ import React from "react";
 import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
+// ✅ Importá todas las imágenes desde src/assets
+import imgGanador     from "../assets/ganador.webp";
+import imgExacta      from "../assets/exacta.webp";
+import imgImperfecta  from "../assets/imperfecta.webp";
+import imgTrifecta    from "../assets/trifecta.webp";
+import imgCuatrifecta from "../assets/cuatrifecta.webp";
+import imgDoble       from "../assets/doble.webp";
+import imgTriplo      from "../assets/triplo.webp";
+import imgCuaterna    from "../assets/cuaterna.webp";
+import imgQuintuplo   from "../assets/quintuplo.webp";
+import imgCadena      from "../assets/cadena.webp";
+
 const tipos = [
   {
-    img: "../assets/ganador.webp",
+    img: imgGanador,
     alt: "imagen apuesta a ganador",
     texto: <>Si el caballo que elegís llega en <strong className="strongTiposAp">1º lugar</strong> ganás</>,
   },
   {
-    img: "../assets/exacta.webp",
+    img: imgExacta,
     alt: "imagen exacta",
     texto: (
       <>
@@ -19,7 +31,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/imperfecta.webp",
+    img: imgImperfecta,
     alt: "imagen imperfecta",
     texto: (
       <>
@@ -29,7 +41,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/trifecta.webp",
+    img: imgTrifecta,
     alt: "imagen trifecta",
     texto: (
       <>
@@ -39,7 +51,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/cuatrifecta.webp",
+    img: imgCuatrifecta,
     alt: "imagen cuatrifecta",
     texto: (
       <>
@@ -49,7 +61,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/doble.webp",
+    img: imgDoble,
     alt: "imagen doble",
     texto: (
       <>
@@ -60,7 +72,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/triplo.webp",
+    img: imgTriplo,
     alt: "imagen triplo",
     texto: (
       <>
@@ -71,7 +83,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/cuaterna.webp",
+    img: imgCuaterna,
     alt: "imagen cuaterna",
     texto: (
       <>
@@ -82,7 +94,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/quintuplo.webp",
+    img: imgQuintuplo,
     alt: "imagen quintuplo",
     texto: (
       <>
@@ -93,7 +105,7 @@ const tipos = [
     ),
   },
   {
-    img: "../assets/cadena.webp",
+    img: imgCadena,
     alt: "imagen cadena",
     texto: (
       <>
@@ -111,56 +123,49 @@ const TiposApuestas = () => {
       <header className="header-pages">
         <Navbar />
       </header>
-    
-    <main className="main-inicio main-pages">
-      <a
-        className="whatsapp-icon"
-        href="https://wa.me/+5493812067808?text=Hola%20buenas,%20una%20consulta."
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Hace tu consulta mediante nuestro chat de whatsapp"
-      >
-        <i className="bi bi-whatsapp wp-icon"></i>
-      </a>
 
-      <div className="container-titulo-pages">
-        <h3 className="titulo-pages">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            className="bi bi-record-fill punto-color-titulo"
-            viewBox="0 0 20 20"
-          >
-            <path fillRule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10" />
-          </svg>
-          Tipos de apuestas
-        </h3>
-      </div>
+      <main className="main-inicio main-pages">
+        <a
+          className="whatsapp-icon"
+          href="https://wa.me/+5493812067808?text=Hola%20buenas,%20una%20consulta."
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Hace tu consulta mediante nuestro chat de whatsapp"
+        >
+          <i className="bi bi-whatsapp wp-icon"></i>
+        </a>
 
-      <div className="separador-pages"></div>
+        <div className="container-titulo-pages">
+          <h3 className="titulo-pages">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" className="bi bi-record-fill punto-color-titulo" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10" />
+            </svg>
+            Tipos de apuestas
+          </h3>
+        </div>
 
-      <div className="container-como-apostar">
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          {tipos.map((tipo, i) => (
-            <div className="col" key={i}>
-              <div className="card">
-                <img
-                  src={tipo.img}
-                  className="card-img-top img-como-apostar"
-                  alt={tipo.alt}
-                  loading="lazy"
-                />
-                <div className="card-body card-body-como-apostar">
-                  <p className="card-text">{tipo.texto}</p>
+        <div className="separador-pages"></div>
+
+        <div className="container-como-apostar">
+          <div className="row row-cols-1 row-cols-md-3 g-4">
+            {tipos.map((tipo, i) => (
+              <div className="col" key={i}>
+                <div className="card">
+                  <img
+                    src={tipo.img}
+                    className="card-img-top img-como-apostar"
+                    alt={tipo.alt}
+                    loading="lazy"
+                  />
+                  <div className="card-body card-body-como-apostar">
+                    <p className="card-text">{tipo.texto}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </main>
+      </main>
     </>
   );
 };

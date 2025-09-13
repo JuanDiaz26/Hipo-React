@@ -3,10 +3,10 @@ import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Imágenes (desde src/assets)
-import hipoInicios from "../assets/hipo-inicios.jpg";
-import hipoHistorico from "../assets/hipo-estructura.jpg";
-import hipoAspectoSocial from "../assets/aspecto-social.JPG";
-import hipoPlantelEquino from "../assets/plantel-equino.jpg";
+import hipoInicios from "../assets/hipo-inicios.webp";
+import hipoHistorico from "../assets/hipo-estructura.webp";
+import hipoAspectoSocial from "../assets/aspecto-social.webp";
+import hipoPlantelEquino from "../assets/plantel-equino.webp";
 
 const Historia = () => {
   return (

@@ -3,9 +3,9 @@ import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Importación de imágenes (3 en total)
-import escuela1 from "../assets/escuela-1.jpeg";
-import escuela2 from "../assets/escuela-2.jpeg";
-import escuela3 from "../assets/escuela-3.jpg";
+import escuela1 from "../assets/escuela-1.webp";
+import escuela2 from "../assets/escuela-2.webp";
+import escuela3 from "../assets/escuela-3.webp";
 
 const Escuela = () => {
   return (
