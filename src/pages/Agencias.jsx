@@ -64,7 +64,7 @@ const Agencias = () => {
               <div className="legend-item">
                 <img
                   className="legend-icon legend-ubicacion"
-                  src="../src/assets/ubicacion-color.png"
+                  src="./src/assets/ubicacion-color.png"
                   alt="Hipódromo de Tucumán"
                   loading="lazy"
                 />
@@ -74,7 +74,7 @@ const Agencias = () => {
               <div className="legend-item">
                 <img
                   className="legend-icon legend-congreso"
-                  src="../src/assets/caballo-blanco.png"
+                  src="./src/assets/caballo-blanco.png"
                   alt="Agencia sucursal Congreso"
                   loading="lazy"
                 />
@@ -84,7 +84,7 @@ const Agencias = () => {
               <div className="legend-item">
                 <img
                   className="legend-icon legend-mitre"
-                  src="../src/assets/caballo-blanco.png"
+                  src="./src/assets/caballo-blanco.png"
                   alt="Agencia sucursal Mitre"
                   loading="lazy"
                 />
