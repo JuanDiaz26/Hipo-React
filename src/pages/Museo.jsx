@@ -3,9 +3,9 @@ import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Importación de imágenes (3 en total)
-import museoGeneral from "../assets/museo-cartel.jpg";
-import museoLoroLopez from "../assets/loro-lopez.jpg";
-import bibliotecaLitoBestani from "../assets/museo-dentro.jpg";
+import museoGeneral from "../assets/museo-cartel.JPG";
+import museoLoroLopez from "../assets/loro-lopez.JPG";
+import bibliotecaLitoBestani from "../assets/museo-dentro.JPG";
 
 const Museo = () => {
   return (
