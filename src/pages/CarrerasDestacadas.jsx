@@ -3,10 +3,10 @@ import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Importación de imágenes (6 en total)
-import hipoGranPremio from "../assets/batalla-trofeos.jpg";
+import hipoGranPremio from "../assets/batalla-trofeos.JPG";
 import cajaPopular from "../assets/caja-carrera.jpg";
-import carreraEstrellas from "../assets/estrellas-1.jpg";
-import estrellasTucumanas from "../assets/estrella-tucu.jpg";
+import carreraEstrellas from "../assets/estrellas-1.JPG";
+import estrellasTucumanas from "../assets/estrella-tucu.JPG";
 import clasicoPellegrini from "../assets/pellegrini-2024.jpg";
 import clasicoAniversario from "../assets/aniv-hipo.jpg";
 
