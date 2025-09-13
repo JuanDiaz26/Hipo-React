@@ -1,11 +1,11 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Importación de imágenes (3 en total)
-import museoGeneral from "../src/assets/museo-cartel.jpg";
-import museoLoroLopez from "../src/assets/loro-lopez.jpg";
-import bibliotecaLitoBestani from "../src/assets/museo-dentro.jpg";
+import museoGeneral from "../assets/museo-cartel.jpg";
+import museoLoroLopez from "../assets/loro-lopez.jpg";
+import bibliotecaLitoBestani from "../assets/museo-dentro.jpg";
 
 const Museo = () => {
   return (

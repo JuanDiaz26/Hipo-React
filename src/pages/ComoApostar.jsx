@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 const ComoApostar = () => {
@@ -7,13 +7,13 @@ const ComoApostar = () => {
     {
       numero: 1,
       texto: "Por call center te enviaremos el link ejecutable de la aplicación",
-      img: "../src/assets/paso1.webp",
+      img: "../assets/paso1.webp",
     },
     {
       numero: 2,
       texto:
         'Ingresar al navegador y presionar "Agrega Hip. Tucumán a la pantalla principal" o presionar "Instalar aplicación"',
-      img: "../src/assets/paso2.webp",
+      img: "../assets/paso2.webp",
     },
     {
       numero: 3,
@@ -24,23 +24,23 @@ const ComoApostar = () => {
     {
       numero: 4,
       texto: "En la pantalla del dispositivo se observará el acceso directo de la aplicación",
-      img: "../src/assets/paso4.webp",
+      img: "../assets/paso4.webp",
     },
     {
       numero: 5,
       texto: "Si no tiene usuario debe registrarse",
-      img: "../src/assets/paso5.webp",
+      img: "../assets/paso5.webp",
     },
     {
       numero: 6,
       texto: "Aquí tiene un ejemplo para completar el registro",
-      img: "../src/assets/paso6.webp",
+      img: "../assets/paso6.webp",
     },
     {
       numero: 7,
       texto:
         "Una vez creada la cuenta ingresamos al e-mail con el cual nos registramos, buscamos el mail de activación e ingresamos nuevamente al link de la app",
-      img: "../src/assets/paso7.webp",
+      img: "../assets/paso7.webp",
     },
   ];
 

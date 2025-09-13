@@ -1,14 +1,14 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Importación de imágenes (6 en total)
-import hipoGranPremio from "../src/assets/batalla-trofeos.jpg";
-import cajaPopular from "../src/assets/caja-carrera.jpg";
-import carreraEstrellas from "../src/assets/estrellas-1.jpg";
-import estrellasTucumanas from "../src/assets/estrella-tucu.jpg";
-import clasicoPellegrini from "../src/assets/pellegrini-2024.jpg";
-import clasicoAniversario from "../src/assets/aniv-hipo.jpg";
+import hipoGranPremio from "../assets/batalla-trofeos.jpg";
+import cajaPopular from "../assets/caja-carrera.jpg";
+import carreraEstrellas from "../assets/estrellas-1.jpg";
+import estrellasTucumanas from "../assets/estrella-tucu.jpg";
+import clasicoPellegrini from "../assets/pellegrini-2024.jpg";
+import clasicoAniversario from "../assets/aniv-hipo.jpg";
 
 const CarrerasDestacadas = () => {
   return (

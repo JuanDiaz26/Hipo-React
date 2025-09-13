@@ -1,6 +1,6 @@
 // src/pages/Programas.jsx
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 const programas = [

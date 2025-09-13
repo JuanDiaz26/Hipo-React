@@ -1,15 +1,15 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 const tipos = [
   {
-    img: "../src/assets/ganador.webp",
+    img: "../assets/ganador.webp",
     alt: "imagen apuesta a ganador",
     texto: <>Si el caballo que elegís llega en <strong className="strongTiposAp">1º lugar</strong> ganás</>,
   },
   {
-    img: "../src/assets/exacta.webp",
+    img: "../assets/exacta.webp",
     alt: "imagen exacta",
     texto: (
       <>
@@ -19,7 +19,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/imperfecta.webp",
+    img: "../assets/imperfecta.webp",
     alt: "imagen imperfecta",
     texto: (
       <>
@@ -29,7 +29,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/trifecta.webp",
+    img: "../assets/trifecta.webp",
     alt: "imagen trifecta",
     texto: (
       <>
@@ -39,7 +39,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/cuatrifecta.webp",
+    img: "../assets/cuatrifecta.webp",
     alt: "imagen cuatrifecta",
     texto: (
       <>
@@ -49,7 +49,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/doble.webp",
+    img: "../assets/doble.webp",
     alt: "imagen doble",
     texto: (
       <>
@@ -60,7 +60,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/triplo.webp",
+    img: "../assets/triplo.webp",
     alt: "imagen triplo",
     texto: (
       <>
@@ -71,7 +71,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/cuaterna.webp",
+    img: "../assets/cuaterna.webp",
     alt: "imagen cuaterna",
     texto: (
       <>
@@ -82,7 +82,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/quintuplo.webp",
+    img: "../assets/quintuplo.webp",
     alt: "imagen quintuplo",
     texto: (
       <>
@@ -93,7 +93,7 @@ const tipos = [
     ),
   },
   {
-    img: "../src/assets/cadena.webp",
+    img: "../assets/cadena.webp",
     alt: "imagen cadena",
     texto: (
       <>

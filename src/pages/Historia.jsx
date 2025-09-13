@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import "./TablasPages.css";
 
 // Imágenes (desde src/assets)
-import hipoInicios from "../src/assets/hipo-inicios.jpg";
-import hipoHistorico from "../src/assets/hipo-estructura.jpg";
-import hipoAspectoSocial from "../src/assets/aspecto-social.jpg";
-import hipoPlantelEquino from "../src/assets/plantel-equino.jpg";
+import hipoInicios from "../assets/hipo-inicios.jpg";
+import hipoHistorico from "../assets/hipo-estructura.jpg";
+import hipoAspectoSocial from "../assets/aspecto-social.jpg";
+import hipoPlantelEquino from "../assets/plantel-equino.jpg";
 
 const Historia = () => {
   return (

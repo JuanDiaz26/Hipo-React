@@ -1,6 +1,6 @@
 // src/pages/Cartas.jsx
 import React from "react";
-import Navbar from "../components/Navbar"; // Componente de navegación
+import Navbar from "../../components/Navbar"; // Componente de navegación
 import "./TablasPages.css"; // Asegurate de crear este archivo si aún no existe
 
 const cartas = [
