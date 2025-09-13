@@ -5,7 +5,7 @@ import "./TablasPages.css";
 // Imágenes (desde src/assets)
 import hipoInicios from "../assets/hipo-inicios.jpg";
 import hipoHistorico from "../assets/hipo-estructura.jpg";
-import hipoAspectoSocial from "../assets/aspecto-social.jpg";
+import hipoAspectoSocial from "../assets/aspecto-social.JPG";
 import hipoPlantelEquino from "../assets/plantel-equino.jpg";
 
 const Historia = () => {
