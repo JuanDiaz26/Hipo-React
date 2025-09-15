@@ -5,7 +5,13 @@ import Navbar from "./Navbar"; // Importamos el nuevo componente
 const HeaderInicio = () => {
   return (
     <header id="header-inicio">
-      <div className="imagen-fondo-movil"></div>
+      <img
+          src="/fondonew.webp"
+          alt="Hipódromo de Tucumán"
+          className="imagen-fondo-movil"
+          fetchpriority="high"
+          decoding="async"
+        />
       <div className="capa"></div>
 
       {/* NAVBAR REUTILIZABLE */}

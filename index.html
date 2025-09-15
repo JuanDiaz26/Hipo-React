@@ -3,11 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+    <title>Inicio | Hipódromo de Tucumán</title>
     <meta name="description" content="El Hipódromo de Tucumán, orgullo del Norte Argentino, ofrece carreras de caballos, programas, resultados y toda la información oficial. Administrado por la Caja Popular de Ahorros.">
+    <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://hipodromodetucuman.netlify.app/" />
+
+    <!-- Iconos y PWA básico -->
+    <link rel="icon" href="/logohipocolor.png">
+    <link rel="apple-touch-icon" href="/logohipocolor.png" />
+    <link rel="manifest" href="/site.webmanifest" /> <!-- opcional; si no lo tenés, no pasa nada -->
+
+    <!-- Color de la UI del navegador -->
     <meta name="theme-color" content="#248689" />
     <meta name="color-scheme" content="light only" />
-    <!-- Open Graph -->
+
+    <!-- Tipografía Inter (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Open Graph (Facebook/WhatsApp/LinkedIn) -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Hipódromo de Tucumán" />
     <meta property="og:title" content="Hipódromo de Tucumán" />
@@ -15,27 +31,51 @@
     <meta property="og:url" content="https://hipodromodetucuman.netlify.app/" />
     <meta property="og:locale" content="es_AR" />
     <meta property="og:image" content="https://hipodromodetucuman.netlify.app/og-image.jpg" />
+    <meta property="og:image:secure_url" content="https://hipodromodetucuman.netlify.app/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:alt" content="Hipódromo de Tucumán - Sitio oficial" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <!-- Twitter -->
+
+    <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Hipódromo de Tucumán" />
     <meta name="twitter:description" content="Resultados, programas, estadísticas, noticias y más." />
-    <meta name="twitter:image" content="https://hipodromodetucuman.netlify.app/og-image.jpg" /> 
-    <meta name="robots" content="index, follow" />
-    <link rel="icon" href="/logohipocolor.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Inicio | Hipódromo de Tucumán</title>
+    <meta name="twitter:image" content="https://hipodromodetucuman.netlify.app/og-image.jpg" />
+    <meta name="twitter:domain" content="hipodromodetucuman.netlify.app" />
+    <!-- Si tenés usuario en X/Twitter, ponelo aquí -->
+    <!-- <meta name="twitter:site" content="@TuUsuario" />
+    <meta name="twitter:creator" content="@TuUsuario" /> -->
+
+    <!-- Preload de la primera placa del carrusel (ajustá extensión si usás .webp) -->
+    <link rel="preload" as="image" href="/carousel-ricardo.webp" /> <!-- si todavía es .png, dejá .png -->
+
+    <!-- Fuente global por si acaso -->
     <style>
       html, body {
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
     </style>
-    <link rel="preload" as="image" href="/carousel-ricardo.png" />
+
+    <!-- Datos estructurados: Organización -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Hipódromo de Tucumán",
+      "url": "https://hipodromodetucuman.netlify.app/",
+      "logo": "https://hipodromodetucuman.netlify.app/logohipocolor.png",
+      "sameAs": [
+        "https://www.facebook.com/hipodromotuc",
+        "https://www.instagram.com/hipodromodetucuman/",
+        "https://www.youtube.com/@HipodromodeTucuman"
+      ]
+    }
+    </script>
   </head>
+
   <body>
+    <noscript>Para usar este sitio necesitás habilitar JavaScript.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

@@ -21,21 +21,20 @@ body {
   width: 100%;
   height: 450px;
   z-index: -2;
-  background-image: url('/fondonew.webp'); /* Ojo: barra inicial */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+  object-fit: cover;     /* Mantiene proporción */
+  object-position: center; /* Equivalente a background-position */
   border-radius: 0 0 85% 85% / 25%;
 }
 
 .capa {
-    position: absolute;
-    width: 100%;
-    height: 450px;
-    background-color: rgba(0, 0, 0);
-    opacity: 0.6;
-    z-index: -1;
-    border-radius: 0 0 85% 85% / 25%;
+  position: absolute;
+  width: 100%;
+  height: 450px;
+  background-color: rgba(0, 0, 0);
+  opacity: 0.6;
+  z-index: -1;
+  border-radius: 0 0 85% 85% / 25%;
 }
 
 .titulo-centro {
