@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import './WhatsappButton.css'; // Importá tu CSS
 
 const WhatsappButton = () => {

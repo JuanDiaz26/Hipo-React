@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Footer.css'; // Asegurate de importar tus estilos acá
 
 const Footer = () => {
