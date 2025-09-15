@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
+    <!-- Preconnect: orígenes críticos (arriba de todo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link rel="preconnect" href="https://i.ytimg.com">
+    <!-- (opcional) por iframes de YouTube -->
+    <link rel="dns-prefetch" href="https://static.doubleclick.net">
+
     <title>Inicio | Hipódromo de Tucumán</title>
     <meta name="description" content="El Hipódromo de Tucumán, orgullo del Norte Argentino, ofrece carreras de caballos, programas, resultados y toda la información oficial. Administrado por la Caja Popular de Ahorros.">
     <meta name="robots" content="index, follow" />
@@ -12,15 +20,13 @@
     <!-- Iconos y PWA básico -->
     <link rel="icon" href="/logohipocolor.png">
     <link rel="apple-touch-icon" href="/logohipocolor.png" />
-    <link rel="manifest" href="/site.webmanifest" /> <!-- opcional; si no lo tenés, no pasa nada -->
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- Color de la UI del navegador -->
     <meta name="theme-color" content="#248689" />
     <meta name="color-scheme" content="light only" />
 
     <!-- Tipografía Inter (Google Fonts) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- Open Graph (Facebook/WhatsApp/LinkedIn) -->
@@ -43,20 +49,18 @@
     <meta name="twitter:description" content="Resultados, programas, estadísticas, noticias y más." />
     <meta name="twitter:image" content="https://hipodromodetucuman.netlify.app/og-image.jpg" />
     <meta name="twitter:domain" content="hipodromodetucuman.netlify.app" />
-    <!-- Si tenés usuario en X/Twitter, ponelo aquí -->
     <!-- <meta name="twitter:site" content="@TuUsuario" />
     <meta name="twitter:creator" content="@TuUsuario" /> -->
-
-    <!-- Preload de la primera placa del carrusel (ajustá extensión si usás .webp) -->
-    <link rel="preload" as="image" href="/carousel-ricardo.webp" /> <!-- si todavía es .png, dejá .png -->
-
+    <!-- Si aún no tenés variantes, podés usar temporalmente -->
+    <link rel="preload" as="image" href="/carousel-ricardo.webp">
+    <!-- Preload: webfont de Bootstrap Icons (si la alojaste en /public/fonts/) -->
+    <link rel="preload" as="font" href="/fonts/bootstrap-icons.woff2" type="font/woff2" crossorigin>
     <!-- Fuente global por si acaso -->
     <style>
       html, body {
         font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
     </style>
-
     <!-- Datos estructurados: Organización -->
     <script type="application/ld+json">
     {
