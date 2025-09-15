@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './VideosRecientes.css';
 
-
 const VideosRecientes = () => {
   return (
     <section className="seccion-videos">
@@ -27,7 +26,17 @@ const VideosRecientes = () => {
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-                <iframe width="873" height="492" src="https://www.youtube.com/embed/b4rIQN0J9RI" title="9º Carrera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                  width="873"
+                  height="492"
+                  src="https://www.youtube.com/embed/b4rIQN0J9RI"
+                  title="9º Carrera"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -42,7 +51,17 @@ const VideosRecientes = () => {
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-                <iframe width="873" height="492" src="https://www.youtube.com/embed/-57rr4UPQys" title="10º Carrera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                  width="873"
+                  height="492"
+                  src="https://www.youtube.com/embed/-57rr4UPQys"
+                  title="10º Carrera"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </div>
@@ -57,7 +76,17 @@ const VideosRecientes = () => {
                 </p>
               </div>
               <div className="ratio ratio-16x9">
-              <iframe width="873" height="492" src="https://www.youtube.com/embed/uDMN0JSfsEY" title="11º Carrera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                  width="873"
+                  height="492"
+                  src="https://www.youtube.com/embed/uDMN0JSfsEY"
+                  title="11º Carrera"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  loading="lazy"
+                ></iframe>
               </div>
             </div>
           </div>

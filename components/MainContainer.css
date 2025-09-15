@@ -45,100 +45,237 @@
 
 /* SCROLL NOVEDAD */
 .container-scroll-novedad {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-color: #20afb4;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #20afb4;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .novedades {
-    white-space: nowrap;
-    animation: scrollLeft 12s linear infinite;
+  white-space: nowrap;
+  animation: scrollLeft 12s linear infinite;
 }
 
+/* Cada item como fila con separación */
 .novedad {
-    display: inline-block;
-    padding: 10px;
-    margin-right: 300px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;               /* <<< espacio entre la fecha y el botón PDF */
+  padding: 10px;
+  margin-right: 300px;
 }
 
 @keyframes scrollLeft {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-250%);
-    }
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-250%); }
 }
 
 @media screen and (min-width: 768px) {
-    .novedades {
-        animation: scrollLeft 15s linear infinite;
-    }
-    
-    @keyframes scrollLeft {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
+  .novedades { animation: scrollLeft 15s linear infinite; }
+  @keyframes scrollLeft {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
 }
 
 .enlace-novedad-scroll {
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
 }
 
+.enlace-novedad-scroll strong {
+  margin-right: 6px;
+}
 
-/* Contenedor con 16:9 SIEMPRE, y altura limitada */
+/* Botón PDF con “pill” y buen hit-area */
+.pdf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;                /* espacio entre texto e icono */
+  text-decoration: none;
+  color: #000000;
+  font-size: 17px;
+  padding: 4px 10px;       /* hace click más cómodo */
+  border-radius: 999px;    /* pill */
+  background: rgba(241, 237, 237, 0.87);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.pdf-link .bi {
+  font-size: 18px;
+  color: #ff3b30;/* rojo tipo PDF */
+  line-height: 1;
+}
+
+.pdf-link:hover {
+  background: #f16536;
+  transform: translateY(-1px);
+  color: white;
+}
+
+/* ====== CONTENEDOR 16:9 Y ALTURAS ====== */
 .contenedorCarousel {
   width: 100%;
   aspect-ratio: 16 / 9;
   margin: 0 0 24px 0;
-  /* Evita que en pantallas grandes se haga gigante (y pierda nitidez) */
-  max-height: 520px;   /* ajustá a gusto: 520–600px */
-  min-height: 320px;   /* asegura presencia en móviles */
+  max-height: 520px;
+  min-height: 320px;
+  border-radius: 12px;           /* borde suave */
+  overflow: hidden;              /* oculta flechas/scrims que sobresalgan */
 }
 
-/* El carrusel ocupa toda esa altura */
+/* Carrusel llena el alto forzado */
 .contenedorCarousel .carousel,
 .contenedorCarousel .carousel-inner,
 .contenedorCarousel .carousel-item { height: 100%; }
 
-/* Fondo por transición (opcional) */
+/* Fondo por transición + scrim para contraste de textos/CTA */
 .contenedorCarousel .carousel-item {
+  position: relative;            /* necesario para overlays */
   background: linear-gradient(135deg, #248689 0%, #f16536 100%);
   overflow: hidden;
 }
+.contenedorCarousel .carousel-item::before {
+  /* scrim sutil para que la placa no “chille” y el CTA se lea bien */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.18) 100%);
+  pointer-events: none;
+}
 
-/* La placa llena el espacio sin deformarse */
+/* Placa cubre sin deformarse */
 .contenedorCarousel .carousel-item img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
+  /* un pelín de nitidez al reescalar */
+  image-rendering: auto;
 }
 
-/* Si querés un toque más alto en desktop, subí SOLO el max-height */
+/* Desktop más alto (solo max-height) */
 @media (min-width: 1200px) {
   .contenedorCarousel { max-height: 580px; }
 }
 
-/* Tus estilos existentes */
-.carousel {
-  box-shadow: 0 0 5px 1px rgba(0,0,0,0.35);
-  width: 100%;
+/* MOBILE: menos alto y menos margen */
+@media (max-width: 576px) {
+  .contenedorCarousel {
+    min-height: 240px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
 }
 
+/* ====== SOMBRA CAJA GENERAL ====== */
+.carousel {
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+/* ====== CONTROLES (FLECHAS) ====== */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 12%; /* área de click generosa */
+}
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.45);
   border-radius: 50%;
+  padding: 12px;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  transform: scale(1.05);
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.carousel-control-prev:focus .carousel-control-prev-icon,
+.carousel-control-next:focus .carousel-control-next-icon {
+  outline: 2px solid #f16536;
+  outline-offset: 2px;
+}
+
+/* ====== CTA SOLO EN SLIDE DE INSCRIPTOS ====== */
+/* Recordá: el contenedor de esa slide tiene class="carousel-item inscriptos-slide" */
+.inscriptos-slide .cta-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  opacity: 0;                    /* desktop: aparece al hover */
+  transition: opacity 0.25s ease;
+}
+.inscriptos-slide .cta-overlay::before {
+  /* velo para oscurecer un poco la placa cuando aparece el CTA */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.28);
+}
+.inscriptos-slide .cta-overlay::after {
+  /* botón */
+  content: "Ver inscriptos";
+  position: relative;
+  z-index: 1;
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #248689 0%, #f16536 100%);
+  color: #fff;
+  border-radius: 999px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.28);
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+/* Hover en desktop */
+.inscriptos-slide:hover .cta-overlay { opacity: 1; }
+.inscriptos-slide .cta-overlay:hover::after {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+}
+
+/* Focus accesible (si se navega con teclado) */
+.inscriptos-slide .cta-overlay:focus-visible::after {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+/* Mobile: sin hover, que se vea siempre */
+@media (max-width: 768px) {
+  .inscriptos-slide .cta-overlay { opacity: 1; }
+  .inscriptos-slide .cta-overlay::after { padding: 10px 16px; font-size: 0.95rem; }
+}
+
+/* ====== ANIMACIÓN/REDUCED MOTION ====== */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon,
+  .inscriptos-slide .cta-overlay,
+  .inscriptos-slide .cta-overlay::after {
+    transition: none;
+  }
+}
+
+/* Ocultar el texto real del <a> para que no se vea detrás */
+.inscriptos-slide .cta-overlay {
+  color: transparent;      /* oculta color del texto (incluye visited/active) */
+  font-size: 0;            /* evita que ocupe alto por tipografía */
+  line-height: 0;          /* por si algún navegador mantiene línea */
+}
+
+.inscriptos-slide .cta-overlay::after {
+  font-size: 2rem;          /* recupera tamaño del texto */
+  display: inline-block;    /* asegura el box correcto */
+  padding: 35px 25px;       /* mantené el mismo padding */
 }
 
 .contenedor-botones-inicio { 
@@ -344,7 +481,7 @@
 }
 
 
-/* Título de sección reutilizable */
+/* Reemplaza/añade */
 .titulo-seccion {
   display: flex;
   align-items: center;
@@ -355,18 +492,29 @@
   margin: 20px auto;
   padding: 20px 10px 10px;
   text-align: left;
+  line-height: 1.15;           /* evita que el texto se “despegue” */
 }
 
-/* Color del puntito SVG */
-.punto-color-titulo {
-  color: #248589; /* Color institucional */
+.titulo-seccion .punto-color-titulo {
+  display: block;              /* saca el baseline raro del inline-svg */
+  flex-shrink: 0;              /* que el puntito no se achique */
 }
 
-/* Ajustes para títulos en columna más angosta (como el aside derecho) */
+/* Columna derecha: márgenes mínimos */
 .titulo-derecha {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
   margin: 10px 0 0 !important;
+}
+
+/* En móvil: tamaño un toque menor + márgenes más chicos */
+@media (max-width: 576px) {
+  .titulo-seccion {
+    width: 100% !important;
+    font-size: 24px !important;
+    margin: 12px auto 0;
+    padding: 8px 4px 0;
+  }
 }
 

@@ -4,38 +4,22 @@ import Navbar from "../../components/Navbar"; // Componente de navegación
 import "./TablasPages.css"; // Asegurate de crear este archivo si aún no existe
 
 const cartas = [
-  {
-    titulo: "Llamado a inscriptos - 4 de Agosto",
-    link: "https://drive.google.com/file/d/1rExKZAi2w-mXeTZFj-Qt-ThxkzZ_I0Gp/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 21 de Julio",
-    link: "https://drive.google.com/file/d/1G7uwS9yGKsiyf0jU4NEcQLS5uAr0wmOn/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 7 de Julio",
-    link: "https://drive.google.com/file/d/1GUMCdxsArJQW7mXE5_5O_1J_zfwpz0G7/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 23 de Junio",
-    link: "https://drive.google.com/file/d/1pAoH1TS1AzsVhbrVKH-g8kDvHwIJV5E7/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 2 de Junio",
-    link: "https://drive.google.com/file/d/1zISintQ-hVPDtJ9rOPoN-9ZsvszjuPO9/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 19 de Mayo",
-    link: "https://drive.google.com/file/d/1UFU0d7Ph0PxqmsK0uwktCj73gf2Y1a5q/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 5 de Mayo",
-    link: "https://drive.google.com/file/d/1LVfSsQDxuRqWn51ym--N8RwemEsMkbeU/view?usp=sharing",
-  },
-  {
-    titulo: "Llamado a inscriptos - 21 de Abril",
-    link: "https://drive.google.com/file/d/1OX4bsOoVeZB_lOoTIt_CRpuo-K15YYQj/view?usp=sharing",
-  },
+  { titulo: "Llamado a inscriptos - 24 de Septiembre", link: "https://drive.google.com/file/d/1FBjG8mBKgR4Lj4GYYTSqCacD9SOmsxUc/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 7 de Septiembre",  link: "https://drive.google.com/file/d/1tFF2M7c_uSdQp17lIZwaByxb5Rd-qWr0/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 24 de Agosto",     link: "https://drive.google.com/file/d/1lrP6lNi696RXXpvla1spCsWXBNy4Rh1z/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 10 de Agosto",     link: "https://drive.google.com/file/d/1iZrKNUZRSwNYqVHoUQri_eIYqMFtiZB7/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 27 de Julio",      link: "https://drive.google.com/file/d/1HCLm5401bolz8h57GcURfotOt0rIliG5/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 13 de Julio",      link: "https://drive.google.com/file/d/1AwH6LA0TGzKz7snqF_oedPGpB5wYof58/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 22 de Junio",      link: "https://drive.google.com/file/d/17y-MTsbEMg153Rn8k7uP7ZUEFPAvXkIC/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 8 de Junio",       link: "https://drive.google.com/file/d/1_zgqwu4F2y7w55LY3vYgS363-_oUiFFx/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 25 de Mayo",       link: "https://drive.google.com/file/d/1ZK6PxsTaGYK-96Fi1hV1DWdLhkiJ-sAy/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 11 de Mayo",       link: "https://drive.google.com/file/d/10ZQJxCqC8Fu96s1WS6v4UiyeCuF8Uoqv/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 26 de Abril",      link: "https://drive.google.com/file/d/1mcfTnIHyKXhrwIQ4BiwxAzIYgMb3qZLd/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 13 de Abril",      link: "https://drive.google.com/file/d/1p96g1GzzBXT6pcl7K6is_WJW1v7U4goq/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 30 de Marzo",      link: "https://drive.google.com/file/d/1o_OdcB4Le4nGdlcCOIXCLZcRQhxADaok/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 16 de Marzo",      link: "https://drive.google.com/file/d/1mirjywu6NFGOzF_ASoCeSySHOtAxiWoT/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 23 de Febrero",    link: "https://drive.google.com/file/d/15cDaROkxO00rcsCmdZc9tj-dyugFfITk/view?usp=sharing" },
+  { titulo: "Llamado a inscriptos - 16 de Febrero",    link: "https://drive.google.com/file/d/1X3M9XFSbKuEXWTs4CuAM969-myyXFsmN/view?usp=sharing" },
 ];
 
 const Cartas = () => {
