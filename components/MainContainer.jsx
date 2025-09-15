@@ -67,7 +67,7 @@ const MainContainer = () => {
         {/* Slide 1 */}
         <div className="carousel-item active">
           <img
-            src="/carousel-ricardo.png"
+            src="/carousel-ricardo.webp"
             className="d-block w-100"
             alt="Placa de carousel"
             loading="lazy"
@@ -77,7 +77,7 @@ const MainContainer = () => {
         {/* Slide 2 */}
         <div className="carousel-item">
           <img
-            src="/carousel-placa2.png"
+            src="/carousel-placa2.webp"
             className="d-block w-100"
             alt="Placa de carousel"
             loading="lazy"
@@ -87,7 +87,7 @@ const MainContainer = () => {
         {/* Slide 3 con CTA */}
         <div className="carousel-item inscriptos-slide">
           <img
-            src="/carousel-placa3.png"   // <-- renombrada como pediste
+            src="/carousel-placa3.webp"   // <-- renombrada como pediste
             className="d-block w-100"
             alt="Inscriptos Reunión - Ver detalle"
             loading="lazy"

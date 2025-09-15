@@ -21,7 +21,7 @@ body {
   width: 100%;
   height: 450px;
   z-index: -2;
-  background-image: url('/fondonew.JPG'); /* Ojo: barra inicial */
+  background-image: url('/fondonew.webp'); /* Ojo: barra inicial */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -7,7 +7,7 @@ const noticias = [
     id: 1,
     titulo: 'Twitch Hurricane se llevó el Especial "Oscar N. Bravo"',
     texto: `Con Héctor A. Suárez en la monta, el pupilo del stud Don Valiente se quedó con el Especial "Oscar N. Bravo", sobre 1.400 metros. El zaino de 6 años, preparado por C.A. Assad, superó por 1 cuerpo a Golden Warrior.`,
-    imagen: "/noticia-1.jpg",   // 👈 directo desde public/assets
+    imagen: "/noticia-1.webp",   // 👈 directo desde public/assets
     fecha: "07Sep25",
     video: "https://www.youtube.com/watch?v=-57rr4UPQys"
   },
@@ -15,7 +15,7 @@ const noticias = [
     id: 2,
     titulo: 'El Patriarca debutó con triunfo en el Premio "Artilu"',
     texto: `Con José A. Vizcarra en la conducción, el potrillo del stud Seba y Cami tuvo un estreno soñado al ganar el Premio "Artilu", sobre 800 metros. El hijo de El Moisés, entrenado por L.O. Brito, se impuso con 3 1/2 cuerpos de ventaja sobre El Barba Roja.`,
-    imagen: "/noticia-2.jpg",   // 👈 ojo con la extensión, ponela en minúsculas
+    imagen: "/noticia-2.webp",   // 👈 ojo con la extensión, ponela en minúsculas
     fecha: "07Sep25",
     video: "https://www.youtube.com/watch?v=jqP0bpHeuqw"
   },
@@ -23,7 +23,7 @@ const noticias = [
     id: 3,
     titulo: 'Lord of Moyvore cerró la jornada en el Premio "Día del Maestro"',
     texto: `Con Facundo R. Morán en las riendas, el pupilo del stud 5 De Copas se quedó con la 11ª y última carrera, el Premio "Día del Maestro", sobre 1.300 metros. El zaino de 6 años, entrenado por S.D. Cuellar, superó por 3 cuerpos a Vikins Terror.`,
-    imagen: "/noticia-3.jpg",   // 👈 lo mismo, en minúsculas
+    imagen: "/noticia-3.webp",   // 👈 lo mismo, en minúsculas
     fecha: "07Sep25",
     video: "https://www.youtube.com/watch?v=uDMN0JSfsEY"
   },
