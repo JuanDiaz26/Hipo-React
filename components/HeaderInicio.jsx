@@ -9,8 +9,9 @@ const HeaderInicio = () => {
           src="/fondonew.webp"
           alt="Hipódromo de Tucumán"
           className="imagen-fondo-movil"
-          fetchpriority="high"
+          fetchPriority="high"
           decoding="async"
+          loading="eager"
         />
       <div className="capa"></div>
 

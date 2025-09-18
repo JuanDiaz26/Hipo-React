@@ -5,7 +5,7 @@ import App from './App.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';      // Bootstrap CSS global
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'; // Bootstrap JS (carousels, modal, etc.)
 import 'bootstrap-icons/font/bootstrap-icons.css';  // Bootstrap Icons global
-import './assets/font-overrides.css';               // Override con font-display: swap
+
 
 
 createRoot(document.getElementById('root')).render(
