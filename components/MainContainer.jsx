@@ -28,7 +28,7 @@ const MainContainer = () => {
       "24 de Septiembre de 2025",
     ].map((fecha, index) => (
       <div className="novedad" key={index}>
-        <a className="enlace-novedad-scroll" href="https://drive.google.com/file/d/1FBjG8mBKgR4Lj4GYYTSqCacD9SOmsxUc/view?usp=sharing" target="_blank"
+        <a className="enlace-novedad-scroll" href="https://drive.google.com/file/d/13NQvufW9xD2LKSJpDEzTwue8I2vZRpmi/view?usp=sharing" target="_blank"
           rel="noopener noreferrer">
           <strong>
             <i className="bi bi-info-circle-fill"></i> Próxima reunión:
