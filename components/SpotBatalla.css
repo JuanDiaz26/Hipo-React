@@ -16,13 +16,10 @@
     rgba(36, 134, 137, 0.65) 0%,
     rgba(241, 101, 54, 0.65) 100%
   );
-}
+} 
 .spot-bg-tint {
-  background: rgba(0, 0, 0, 0.25); /* subí/bajá este valor para más/menos opacidad */
+  background: rgba(0, 0, 0, 0.436); /* subí/bajá este valor para más/menos opacidad */
 }
-
-/* ===== Heading “fachero” ===== */
-.spot-heading { }
 
 /* Pill superior (kicker) */
 .spot-kicker{
@@ -105,7 +102,8 @@
 /* 🔸 Ambos botones con el mismo estilo (outline blanco + base naranja translúcida) */
 .btn-spot-outline {
   color: #ffffff !important;
-  background-color: #f16536b2 !important; /* base suave naranja */
+  font-weight: bold !important;
+  background-color: #f16536df !important; /* base suave naranja */
   border: 2px solid rgba(255,255,255,0.9) !important;
   border-radius: 12px !important;
 }
@@ -123,7 +121,7 @@
   .spot-info .spot-copy { margin-left: auto; margin-right: auto; }
 }
 
-/* (Opcional) si todavía usabas .spot-titulo viejo, lo podés quitar o dejar como alias: */
-.spot-titulo { /* alias antiguo -> no usado con el nuevo heading */
-  display:none;
+.text-white {
+    font-weight: bold;
+    font-size: 20px !important;
 }

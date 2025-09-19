@@ -92,7 +92,7 @@ const SpotBatalla = () => {
       {/* Derecha: Texto + CTAs */}
       <div className="col-12 col-lg-5">
         <div className="spot-info text-center text-lg-start ms-lg-3">
-          <p className="text-white fs-6 fs-md-5 mb-4 spot-copy">
+          <p className="text-white mb-4 spot-copy">
             Disfrutá del espectáculo hípico más importante del norte argentino:
             los mejores ejemplares y jinetes en el Hipódromo de Tucumán.
             Una jornada de emoción y pasión por las carreras.
@@ -100,10 +100,10 @@ const SpotBatalla = () => {
 
           <div className="d-flex flex-column flex-sm-row gap-3">
             <a href="/programas"  className="btn btn-spot-outline btn-lg fw-semibold px-4 py-2">
-              Programa Oficial
+              Programas
             </a>
             <a href="/resultados" className="btn btn-spot-outline btn-lg fw-semibold px-4 py-2">
-              Ver Resultados
+              Resultados
             </a>
           </div>
         </div>
