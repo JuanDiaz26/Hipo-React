@@ -4,6 +4,7 @@ import MainContainer from '../../components/MainContainer.jsx';
 import Noticias from "../../components/Noticias.jsx";
 import VideosRecientes from '../../components/VideosRecientes.jsx';
 import EstadisticasInicio from '../../components/EstadisticasInicio.jsx';
+import SpotBatalla from '../../components/spotBatalla.jsx';
 
 
 
@@ -12,6 +13,7 @@ const Inicio = () => {
     <>
       <HeaderInicio />
       <MainContainer />
+      <SpotBatalla />
       <Noticias />
       <VideosRecientes />
       <EstadisticasInicio />

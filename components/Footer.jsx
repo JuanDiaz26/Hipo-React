@@ -48,7 +48,7 @@ const Footer = () => {
             <div className="contenedor-text-footer">
               <i className="bi bi-envelope-at-fill"></i>
               <span className="text-footer">Correo: </span>
-              <a href="mailto:hipodromodetucuman@outlook.com">hipodromodetucuman@outlook.com</a>
+              <a href="mailto:hipodromotuc@gmail.com">hipodromotuc@gmail.com</a>
             </div>
             <div className="contenedor-text-footer">
               <i className="bi bi-geo-alt-fill"></i>
@@ -73,7 +73,7 @@ const Footer = () => {
       {/* Pie de página */}
       <div className="container-bottom-footer">
         <p className="copyright">
-          &copy; 2024 Hipódromo de Tucumán. Administrado por la Caja Popular de Ahorros. Algunos derechos reservados.
+          &copy; 2024 Hipódromo de Tucumán. Administrado por la Caja Popular de Ahorros. 
         </p>
       </div>
     </footer>

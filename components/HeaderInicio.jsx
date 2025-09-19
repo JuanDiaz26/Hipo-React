@@ -5,14 +5,15 @@ import Navbar from "./Navbar"; // Importamos el nuevo componente
 const HeaderInicio = () => {
   return (
     <header id="header-inicio">
-      <img
-          src="/fondonew.webp"
-          alt="Hipódromo de Tucumán"
-          className="imagen-fondo-movil"
-          fetchPriority="high"
-          decoding="async"
-          loading="eager"
-        />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="video-fondo"
+      >
+        <source src="/video-portada.mp4" type="video/mp4" />
+      </video>
       <div className="capa"></div>
 
       {/* NAVBAR REUTILIZABLE */}
@@ -28,7 +29,6 @@ const HeaderInicio = () => {
             loading="lazy"
           />
         </a>
-        <h3 className="titulo-centro">Hipódromo de Tucumán</h3>
         <br />
         <div className="contenedorBotonesCentro">
           <a
