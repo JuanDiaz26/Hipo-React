@@ -73,7 +73,7 @@ const Footer = () => {
       {/* Pie de página */}
       <div className="container-bottom-footer">
         <p className="copyright">
-          &copy; 2024 Hipódromo de Tucumán. Administrado por la Caja Popular de Ahorros. 
+          &copy; 2025 Hipódromo de Tucumán. Administrado por la Caja Popular de Ahorros. 
         </p>
       </div>
     </footer>
