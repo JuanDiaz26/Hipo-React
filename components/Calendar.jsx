@@ -17,14 +17,14 @@ const linksData = [
   { year: 2025, month: 4, day: 26, url: "https://drive.google.com/file/d/1u0777Ewb4Rt9mvEegEg_d3GnSChFbjdO/view?usp=sharing" },
   { year: 2025, month: 5, day: 11, url: "https://drive.google.com/file/d/1o5hsY1VizfgGSmMtmZosFMWLGo9mJviL/view?usp=sharing" },
   { year: 2025, month: 5, day: 25, url: "https://drive.google.com/file/d/1jBZSkJFBFMzQfMxun-l5reGU4R_cegaf/view?usp=sharing" },
-  { year: 2025, month: 6, day: 8, url: "https://drive.google.com/file/d/1P7DSUluYFeX7qBUATNrWpnLrv1wLGkeX/view?usp=sharing" },
+  { year: 2025, month: 6, day: 8,  url: "https://drive.google.com/file/d/1P7DSUluYFeX7qBUATNrWpnLrv1wLGkeX/view?usp=sharing" },
   { year: 2025, month: 6, day: 22, url: "https://drive.google.com/file/d/1slfXnFDBYQluSze6IHmo9qJmLVLWeYU2/view?usp=sharing" },
   { year: 2025, month: 7, day: 13, url: "https://drive.google.com/file/d/1C1-F7CLhzkuHCRVjfNHAmo7S3pOBpiSV/view?usp=sharing" },
   { year: 2025, month: 7, day: 27, url: "https://drive.google.com/file/d/1wwdDhchSxykwxWEnXCNOKLs-INdbdbYR/view?usp=sharing" },
   { year: 2025, month: 8, day: 10, url: "https://drive.google.com/file/d/1RrqY6CLtKwXqOo85riXoHBPAHq1lB40I/view?usp=sharing" },
   { year: 2025, month: 8, day: 24, url: "https://drive.google.com/file/d/1M9VZqdpMSJyi1rarpP6yQSlpcynDbK-0/view?usp=sharing" },
   { year: 2025, month: 9, day: 7,  url: "https://drive.google.com/file/d/17c6YbUNb_4GFRut3C3C1KZWAaZzPSy2o/view?usp=sharing" },
-  { year: 2025, month: 9, day: 24, url: "https://drive.google.com/file/d/13NQvufW9xD2LKSJpDEzTwue8I2vZRpmi/view?usp=sharing" },
+  { year: 2025, month: 9, day: 24, url: "https://drive.google.com/file/d/1XUej832-cpyD6P2OFq_PApzg0cYWl5zj/view?usp=sharing" },
 ];
 
 const isExternal = (url) => /^https?:\/\//i.test(url);
