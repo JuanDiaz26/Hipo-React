@@ -47,7 +47,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: middle;
+  object-position: top;
 }
 
 /* ====== contenido ====== */

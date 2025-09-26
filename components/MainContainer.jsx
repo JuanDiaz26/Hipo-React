@@ -21,11 +21,11 @@ const MainContainer = () => {
 <div className="container-scroll-novedad"> 
   <div className="novedades">
     {[
-      "24 de Septiembre de 2025",
-      "24 de Septiembre de 2025",
-      "24 de Septiembre de 2025",
-      "24 de Septiembre de 2025",
-      "24 de Septiembre de 2025",
+      "5 de Octubre de 2025",
+      "5 de Octubre de 2025",
+      "5 de Octubre de 2025",
+      "5 de Octubre de 2025",
+      "5 de Octubre de 2025",
     ].map((fecha, index) => (
       <div className="novedad" key={index}>
         <a className="enlace-novedad-scroll" href="https://drive.google.com/file/d/13NQvufW9xD2LKSJpDEzTwue8I2vZRpmi/view?usp=sharing" target="_blank"
@@ -37,7 +37,7 @@ const MainContainer = () => {
         </a>
 
         {/* Botón/Link PDF con espacio y estilo propio */}
-        <a
+        {/* <a
           className="pdf-link"
           href="https://drive.google.com/file/d/1L66XoVMZNm-LtU9_InkvwR63lfLBzLWd/view?usp=sharing"
           target="_blank"
@@ -46,7 +46,7 @@ const MainContainer = () => {
         >
           <span>Ver inscriptos para la proxima reunión</span>
           <i className="bi bi-file-pdf-fill"></i>
-        </a>
+        </a> */}
       </div>
     ))}
   </div>

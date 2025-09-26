@@ -25,6 +25,7 @@ const linksData = [
   { year: 2025, month: 8, day: 24, url: "https://drive.google.com/file/d/1M9VZqdpMSJyi1rarpP6yQSlpcynDbK-0/view?usp=sharing" },
   { year: 2025, month: 9, day: 7,  url: "https://drive.google.com/file/d/17c6YbUNb_4GFRut3C3C1KZWAaZzPSy2o/view?usp=sharing" },
   { year: 2025, month: 9, day: 24, url: "https://drive.google.com/file/d/1XUej832-cpyD6P2OFq_PApzg0cYWl5zj/view?usp=sharing" },
+  { year: 2025, month: 10, day: 5, url: "https://drive.google.com/file/d/14AVprNPDLt2mZkbB5lp9wUO_YNxqjTI2/view?usp=sharing" },
 ];
 
 const isExternal = (url) => /^https?:\/\//i.test(url);
