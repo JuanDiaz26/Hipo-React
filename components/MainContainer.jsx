@@ -67,7 +67,7 @@ const MainContainer = () => {
         {/* Slide 1 */}
         <div className="carousel-item active">
           <img
-            src="/carousel-ricardo.webp"
+            src="/carousel-ricardo.jpg"
             className="d-block w-100"
             alt="Placa de carousel"
             loading="lazy"
@@ -77,7 +77,7 @@ const MainContainer = () => {
         {/* Slide 2 */}
         <div className="carousel-item">
           <img
-            src="/carousel-placa2.webp"
+            src="/carousel-placa2.jpg"
             className="d-block w-100"
             alt="Placa de carousel"
             loading="lazy"

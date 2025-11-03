@@ -153,7 +153,7 @@
   height: 100%;
   display: block;
   object-fit: cover;
-  /* un pelín de nitidez al reescalar */
+    /* un pelín de nitidez al reescalar */
   image-rendering: auto;
 }
 
