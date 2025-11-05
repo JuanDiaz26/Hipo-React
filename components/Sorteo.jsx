@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState, version } from 'react';
 import './Sorteo.css';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
@@ -149,10 +149,7 @@ const Sorteo = () => {
 const descargarPDF = () => {
   const doc = new jsPDF("p", "mm", "a4");
   const pageWidth = doc.internal.pageSize.getWidth();
-
-  // === Logo (asegurate de tener /public/img/logo-hipodromo.png) ===
-  const logo = "/src/assets/logohipocolor.png"; 
-  doc.addImage(logo, "PNG", pageWidth/2 - 20, 8, 40, 40);
+;
 
   // === Título ===
   doc.setFontSize(18);
@@ -216,10 +213,9 @@ const descargarPDF = () => {
   return (
     <div className="sorteo-page">
       <header className="sorteo-header">
-        <img src="/src/assets/logohipocolor.png" alt="Hipódromo de Tucumán" className="logo-hipo" draggable="false" />
         <h1 className="titulo-sorteo">Sorteo de Partidores<span className="accent" /></h1>
         <div className="subheader">
-          <span className="chip teal">Reunión Nº 07/09/2025</span>
+          <span className="chip teal">Reunión Nº 19 - 09/11/2025</span>
           <span className="chip orange">Transmisión en vivo</span>
         </div>
       </header>
